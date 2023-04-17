@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  14 APR 2023 12:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  17 APR 2023 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -1921,6 +1921,8 @@ Package: thmdef-mdframed 2023/02/17 v0.75
 \c@bem=\count557
 )
 (/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
+stanz/LaTeX/Packages/kern/Basic/Grundfunktionen.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
 stanz/LaTeX/Packages/kern/Basic/Archiv.tex)
 (/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
 stanz/LaTeX/Packages/kern/Kurse/Analysis.tex
@@ -1931,7 +1933,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 			\renewcommand*{\endlich}
+l.55 			\renewcommand*{\endlich}
                                 {\Mengenschriftdesign{endlich}\xspace}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1978,7 +1980,27 @@ stanz/LaTeX/Packages/kern/Eigenes/ZusaetzlicheMathematik.tex)
 stanz/LaTeX/Packages/kern/Eigenes/EigeneSchreibweisen.tex))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux
+
+
+LaTeX Warning: Unused global option(s):
+    [headings].
+
+(./main.aux
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
 
 LaTeX Warning: Label `nr:1={}' multiply defined.
 
@@ -1991,44 +2013,44 @@ LaTeX Warning: Label `nr:1={}' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 babelbib extension \bibsngerman added to \extrasngerman
 babelbib extension \btxifchangecaseoff added to \extrasngerman
 babelbib: Use citation-dependent languages in bibliography
 babelbib: Set bibliography fall-back language to ngerman
-LaTeX Info: Redefining \microtypecontext on input line 8.
-Package microtype Info: Applying patch `item' on input line 8.
-Package microtype Info: Applying patch `toc' on input line 8.
-Package microtype Info: Applying patch `eqnum' on input line 8.
+LaTeX Info: Redefining \microtypecontext on input line 14.
+Package microtype Info: Applying patch `item' on input line 14.
+Package microtype Info: Applying patch `toc' on input line 14.
+Package microtype Info: Applying patch `eqnum' on input line 14.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 8.
+Package microtype Warning: Unable to apply patch `footnote' on input line 14.
 
-Package microtype Info: Applying patch `verbatim' on input line 8.
+Package microtype Info: Applying patch `verbatim' on input line 14.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 8.
+LaTeX Info: Redefining \showhyphens on input line 14.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -2062,12 +2084,22 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 8.
+ on input line 14.
+
+
+Package scrlayer-scrpage Warning: Very small head height detected!
+(scrlayer-scrpage)                Using scrlayer-scrpage the head height
+(scrlayer-scrpage)                should be at least \baselineskip, which is
+(scrlayer-scrpage)                13.6pt currently.
+(scrlayer-scrpage)                But head height is currently 12.0pt only.
+(scrlayer-scrpage)                You may use
+(scrlayer-scrpage)                \setlength{\headheight}{13.6pt}
+(scrlayer-scrpage)                \relax to avoid this warning.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 8.
+Package hyperref Info: Link coloring OFF on input line 14.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -2103,8 +2135,8 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+or `german'. on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2113,7 +2145,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -2123,24 +2155,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 
-10.
+16.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-0.
+6.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for U+cmllr on input line 1
-0.
+6.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/cmll/ucmllr.fd)
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 10.
+(microtype)             (new value: 12.0pt) on input line 16.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 10.
+(microtype)             (new value: 8.0pt) on input line 16.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 10.
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 10
+(microtype)             (new value: 6.0pt) on input line 16.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/wasysym/uwasy.fd
@@ -2158,12 +2190,8 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 7.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 7.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 7.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/10.95'
+(microtype)             (new value: 10.95pt) on input line 7.
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 7
 .
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd)
@@ -2171,14 +2199,18 @@ Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 13
 .
 Package marginnote Info: right page because not two side mode on input line 13.
 
-Package marginnote Info: xpos seems to be 137.35257pt on input line 13.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 13.
+Package marginnote Info: xpos seems to be 129.60251pt on input line 13.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/10'
+(microtype)             (new value: 10.0pt) on input line 13.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 13.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/5'
+(microtype)             (new value: 5.0pt) on input line 13.
 Package marginnote Info: Margin note 1.2 is on absolute page 1 on input line 20
 .
 Package marginnote Info: right page because not two side mode on input line 20.
 
-Package marginnote Info: xpos seems to be 137.35257pt on input line 20.
+Package marginnote Info: xpos seems to be 129.60251pt on input line 20.
 
 
 Package siunitx Warning: Unit macro \angstrom has been deprecated in this
@@ -2190,15 +2222,32 @@ Package siunitx Warning: Unit macro \angstrom has been deprecated in this
 (siunitx)                
 (siunitx)                \DeclareSIUnit\angstrom{\text {Ã…}}
 
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 13.59999pt needed,
+(scrlayer-scrpage)                but only 12.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., using
+(scrlayer-scrpage)                  \setlength{\headheight}{13.59999pt}
+(scrlayer-scrpage)                in your preamble.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
+5.
+
+
+Overfull \vbox (1.59999pt too high) has occurred while \output is active []
+
+
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Package marginnote Info: Margin note 2.1 is on absolute page 2 on input line 50
+[2]
+Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 50
 .
 Package marginnote Info: right page because not two side mode on input line 50.
 
-Package marginnote Info: xpos seems to be 137.35257pt on input line 50.
+Package marginnote Info: xpos seems to be 129.60251pt on input line 50.
 Package hyperref Info: bookmark level for unknown expt defaults to 0 on input l
 ine 52.
 
@@ -2207,9 +2256,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 52--54
-\T1/cmr/m/it/10 (+20) durch wel-che ge-wähl-te Teil-chen hin-durch-flie-gen, wi
-e bei-spiels-wei-se
+Underfull \hbox (badness 3168) in paragraph at lines 52--54
+\T1/cmr/m/it/10.95 (+20) ser-dampf, durch wel-che ge-wähl-te Teil-chen hin-durc
+h-flie-gen, wie
  []
 
 
@@ -2218,87 +2267,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
  []
 
 
-Underfull \hbox (badness 3919) in paragraph at lines 60--62
-[] \T1/cmr/m/it/10 (+20) Das []\T1/cmr/m/n/10 (+20) Feldemissions- \T1/cmr/m/it
-/10 (+20) oder \T1/cmr/m/n/10 (+20) Fel-d-elek-tro-nen-mi-kro-skop[] \T1/cmr/m/
-it/10 (+20) wur-de ent-wi-
+Underfull \hbox (badness 3260) in paragraph at lines 60--62
+[] \T1/cmr/m/it/10.95 (+20) Das []\T1/cmr/m/n/10.95 (+20) Feldemissions- \T1/cm
+r/m/it/10.95 (+20) oder \T1/cmr/m/n/10.95 (+20) Fel-d-elek-tro-nen-mi-kro-skop[
+] \T1/cmr/m/it/10.95 (+20) wur-de ent-
  []
 
-[2]) (./Notes/lec3.tex
-! Misplaced alignment tab character &.
-l.12             \[&
-                    \text{lateral: }0.05\si\angstrom &&\text{vertikal: }1\si...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.12 ...     \[&\text{lateral: }0.05\si\angstrom &
-                                                  &\text{vertikal: }1\si{\pi...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.12 ...    \[&\text{lateral: }0.05\si\angstrom &&
-                                                  \text{vertikal: }1\si{\pic...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 14
+) (./Notes/lec3.tex [3]
+Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 14
 .
 Package marginnote Info: right page because not two side mode on input line 14.
 
-Package marginnote Info: xpos seems to be 137.77762pt on input line 14.
-[3]) [4] (./main.aux)
+Package marginnote Info: xpos seems to be 129.60889pt on input line 14.
+Package marginnote Info: Margin note 4.2 is on absolute page 5 on input line 23
+.
+Package marginnote Info: right page because not two side mode on input line 23.
+
+Package marginnote Info: xpos seems to be 129.60251pt on input line 23.
+
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 17.68002pt needed,
+(scrlayer-scrpage)                but only 13.59999pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., using
+(scrlayer-scrpage)                  \setlength{\headheight}{17.68002pt}
+(scrlayer-scrpage)                in your preamble.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
+4.
+
+
+Overfull \vbox (4.08003pt too high) has occurred while \output is active []
+
+
+
+Package scrlayer-scrpage Warning: \footheight to low.
+(scrlayer-scrpage)                At least 17.68002pt needed,
+(scrlayer-scrpage)                but only 13.6pt found.
+(scrlayer-scrpage)                I'll enlarge \footheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., using
+(scrlayer-scrpage)                  \setlength{\footheight}{17.68002pt}
+(scrlayer-scrpage)                in your preamble.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 24
+.
+
+[4]) (./Notes/lec4.tex
+<Bilddateien/Kathodenstrahlroehre.png, id=96, 1927.2pt x 1129.21875pt>
+File: Bilddateien/Kathodenstrahlroehre.png Graphic file (type png)
+<use Bilddateien/Kathodenstrahlroehre.png>
+Package pdftex.def Info: Bilddateien/Kathodenstrahlroehre.png  used on input li
+ne 14.
+(pdftex.def)             Requested size: 142.26378pt x 83.34377pt.
+ [5 <./Bilddateien/Kathodenstrahlroehre.png>]
+Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 21
+.
+Package marginnote Info: right page because not two side mode on input line 21.
+
+Package marginnote Info: xpos seems to be 129.61948pt on input line 21.
+
+! Undefined control sequence.
+<argument> \kilo \gramm 
+                        
+l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+                                                  $.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \kilo \gramm 
+                        
+l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+                                                  $.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package siunitx Error: Found prefix part with no unit.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+                                                  $.
+
+Each prefix part must be associated with a unit: a prefix part was found but
+no following unit was given.
+
+
+Package marginnote Info: Margin note 6.2 is on absolute page 7 on input line 34
+.
+Package marginnote Info: right page because not two side mode on input line 34.
+
+Package marginnote Info: xpos seems to be 129.60251pt on input line 34.
+[6]
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 48
+.
+Package marginnote Info: right page because not two side mode on input line 48.
+
+Package marginnote Info: xpos seems to be 129.60593pt on input line 48.
+<Bilddateien/ThomsonModell.png, id=119, 1284.8pt x 1284.8pt>
+File: Bilddateien/ThomsonModell.png Graphic file (type png)
+<use Bilddateien/ThomsonModell.png>
+Package pdftex.def Info: Bilddateien/ThomsonModell.png  used on input line 58.
+(pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
+ [7]
+<Bilddateien/Streuversuch_Rutherford.svg.png, id=130, 441.65pt x 251.94125pt>
+File: Bilddateien/Streuversuch_Rutherford.svg.png Graphic file (type png)
+<use Bilddateien/Streuversuch_Rutherford.svg.png>
+Package pdftex.def Info: Bilddateien/Streuversuch_Rutherford.svg.png  used on i
+nput line 69.
+(pdftex.def)             Requested size: 142.26378pt x 81.15335pt.
+Package marginnote Info: Margin note 8.1 is on absolute page 9 on input line 76
+.
+Package marginnote Info: right page because not two side mode on input line 76.
+
+Package marginnote Info: xpos seems to be 129.95428pt on input line 76.
+ [8 <./Bilddateien/ThomsonModell.png> <./Bilddateien/Streuversuch_Rutherford.sv
+g.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--93
+
+ []
+
+) [9] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D2AC66B5F370ACAA887CC8401431B4B;593.
+(rerunfilecheck)             Checksum: 022C708D239A6C0576EA18D1C2A65D3B;1253.
  ) 
 Here is how much of TeX's memory you used:
- 60347 strings out of 476025
- 1425733 string characters out of 14540017
- 17042437 words of memory out of 20000000
- 79529 multiletter control sequences out of 15000+600000
- 541694 words of font info for 182 fonts, out of 8000000 for 9000
+ 60519 strings out of 476025
+ 1428652 string characters out of 14540017
+ 17042870 words of memory out of 20000000
+ 79598 multiletter control sequences out of 15000+600000
+ 547066 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 143i,20n,137p,1068b,1260s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,20n,137p,1068b,1186s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
-b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf
--dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/2023/texmf-dist/fon
-ts/type1/public/wasy-type1/wasy9.pfb>
-Output written on main.pdf (4 pages, 282672 bytes).
+b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2023/texmf-di
+st/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/wasy-type1/wasy10.pfb>
+Output written on main.pdf (9 pages, 656403 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 16 named destinations out of 1000 (max. 500000)
- 40997 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 55364 words of extra memory for PDF output out of 61914 (max. 10000000)
 

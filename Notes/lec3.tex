@@ -9,12 +9,19 @@
 
         \paragraph*{Rasterelektronenmikroskopie}
             Die Methode der \href{https://de.wikipedia.org/wiki/Rasterelektronenmikroskopie}{Rasterelektronenmikroskopie} rastert ein Muster der Elektronenstrahlung über das zu mikroskopierende Objekt, welches selbstgewählt ist. Ein Sonderfall dieser ist die Rastertunnelmikroskopie (entworfen bei IBM in Zürich), bei welcher keine Elektronen verwendet werden, sondern die Elektrode sehr nahe (approx. $2\si\angstrom$) an das zu untersuchende Objekt herangebracht wird. Hierduch entsteht ein sogenannter \emph{Tunnelstrom}, welcher eine Proportionalität $I\propto \exp(-d)$ vorweist, sodaß $-\ln(I)\propto d$ der Abstand zur Probe ist. Die Rastertunnelmikroskopie ist somit eine Methode zur Messung der Abstände zwischen Probe und Elektrode. Die Auflösung ist dabei 
-            \[&\text{lateral: }0.05\si\angstrom &&\text{vertikal: }1\si{\pico\metre}.\]
+            \[\text{lateral: }0.05\si\angstrom \qquad\text{vertikal: }1\si{\pico\metre}.\]
             \begin{Aufgabe}
                 \nr{} Recherchiere das IBM Logo aus Atomen gebastelt. Wie groß ist das Logo? Wie wurde das Logo zurechtgeschoben?
             \end{Aufgabe}
         
     
         \subsection{Definition des Atomradius}
-            Misst man mit verschiedenen Methoden dasselbe Atom, erhält man verschiedene Radien und damit Atomgrößen. Die Messmethoden sind also bezüglich des Atomradius nicht eindeutig! 
+            Misst man mit verschiedenen Methoden dasselbe Atom, erhält man verschiedene Radien und damit Atomgrößen. Die Messmethoden sind also bezüglich des Atomradius nicht eindeutig! Atome sind also keine harten Kugeln im Sinne der Vorstellung, sondern haben ein \emph{Wechselwirkungspotential} (auch \href{https://de.wikipedia.org/wiki/Lennard-Jones-Potential}{Lennard-Jones-Potential}) der Form 
+            \[V:=\fdef{\frac{a}{r^{12}}-\frac{b}{r^6}}{r\in\R_{\geq 0}},\]
+            welches mit verschiedenen Messmethoden zu verschiedenen Radien registriert wird. 
+            \begin{Aufgabe}
+                \nr{} Leite das Potential $V$ her. Was ist die Bedeutung der Parameter $a$ und $b$?
+            \end{Aufgabe}
+            Den Atomradius setzt man nach dem Potential beispielsweise auf $r_m:=\nbra{2a/b}^{1/b}$ als $\argmin{V}$ oder auch $r_0=\nbra(a/b)^{1/b}$ als nächste Nullstelle zu $r=0$ aus $V(r_0)=0$. 
+            
 \end{document}
