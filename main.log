@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  18 APR 2023 08:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  19 APR 2023 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2024,6 +2024,15 @@ LaTeX Warning: Label `nr:1={}' multiply defined.
 
 LaTeX Warning: Label `nr:1={}' multiply defined.
 
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -2308,27 +2317,61 @@ Overfull \vbox (24.0pt too high) has occurred while \output is active []
 
  [2])
 (./Notes/lec3.tex
-Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 14
+Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 4.
+
+Package marginnote Info: xpos seems to be 128.03738pt on input line 4.
+Package marginnote Info: Margin note 3.2 is on absolute page 3 on input line 15
 .
-Package marginnote Info: xpos seems to be 131.28279pt on input line 14.
-Package marginnote Info: Margin note 3.2 is on absolute page 4 on input line 23
+Package marginnote Info: xpos seems to be 131.28279pt on input line 15.
+Package marginnote Info: Margin note 3.3 is on absolute page 4 on input line 24
 .
-Package marginnote Info: xpos seems to be 102.66722pt on input line 23.
- [3]) (./Notes/lec4.tex
+Package marginnote Info: xpos seems to be 102.66722pt on input line 24.
+
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 46.8001pt needed,
+(scrlayer-scrpage)                but only 36.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=46.8001pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
+5.
+
+
+Overfull \vbox (10.8001pt too high) has occurred while \output is active []
+
+
+
+Package scrlayer-scrpage Warning: \footheight to low.
+(scrlayer-scrpage)                At least 15.60002pt needed,
+(scrlayer-scrpage)                but only 12.0pt found.
+(scrlayer-scrpage)                I'll enlarge \footheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., using
+(scrlayer-scrpage)                  \setlength{\footheight}{15.60002pt}
+(scrlayer-scrpage)                in your preamble.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 25
+.
+
+[3]) (./Notes/lec4.tex
+Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 4.
+
+Package marginnote Info: xpos seems to be 99.58464pt on input line 4.
 <Bilddateien/Kathodenstrahlroehre.png, id=90, 1927.2pt x 1129.21875pt>
 File: Bilddateien/Kathodenstrahlroehre.png Graphic file (type png)
 <use Bilddateien/Kathodenstrahlroehre.png>
 Package pdftex.def Info: Bilddateien/Kathodenstrahlroehre.png  used on input li
-ne 14.
+ne 15.
 (pdftex.def)             Requested size: 142.26378pt x 83.34377pt.
-Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 21
+Package marginnote Info: Margin note 4.2 is on absolute page 4 on input line 22
 .
-Package marginnote Info: xpos seems to be 102.6592pt on input line 21.
+Package marginnote Info: xpos seems to be 102.6592pt on input line 22.
 
 ! Undefined control sequence.
 <argument> \kilo \gramm 
                         
-l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+l.26 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
                                                   $.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2339,7 +2382,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \kilo \gramm 
                         
-l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+l.26 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
                                                   $.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2353,7 +2396,7 @@ and I'll forget about whatever was undefined.
 For immediate help type H <return>.
  ...                                              
                                                   
-l.25 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
+l.26 ...t $m_e=9,109\cdot 10^{-31}\si{\kilo\gramm}
                                                   $.
 
 Each prefix part must be associated with a unit: a prefix part was found but
@@ -2361,34 +2404,82 @@ no following unit was given.
 
 
 [4 <./Bilddateien/Kathodenstrahlroehre.png>]
-Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 34
+Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 35
 .
-Package marginnote Info: xpos seems to be 131.11996pt on input line 34.
-Package marginnote Info: Margin note 5.2 is on absolute page 5 on input line 48
+Package marginnote Info: xpos seems to be 131.11996pt on input line 35.
+Package marginnote Info: Margin note 5.2 is on absolute page 5 on input line 49
 .
-Package marginnote Info: xpos seems to be 131.11996pt on input line 48.
+Package marginnote Info: xpos seems to be 131.11996pt on input line 49.
  [5]
 <Bilddateien/ThomsonModell.png, id=120, 1284.8pt x 1284.8pt>
 File: Bilddateien/ThomsonModell.png Graphic file (type png)
 <use Bilddateien/ThomsonModell.png>
-Package pdftex.def Info: Bilddateien/ThomsonModell.png  used on input line 58.
+Package pdftex.def Info: Bilddateien/ThomsonModell.png  used on input line 59.
 (pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
 <Bilddateien/Streuversuch_Rutherford.svg.png, id=121, 441.65pt x 251.94125pt>
 File: Bilddateien/Streuversuch_Rutherford.svg.png Graphic file (type png)
 <use Bilddateien/Streuversuch_Rutherford.svg.png>
 Package pdftex.def Info: Bilddateien/Streuversuch_Rutherford.svg.png  used on i
-nput line 69.
+nput line 70.
 (pdftex.def)             Requested size: 142.26378pt x 81.15335pt.
-Package marginnote Info: Margin note 6.1 is on absolute page 7 on input line 76
+Package marginnote Info: Margin note 6.1 is on absolute page 7 on input line 77
 .
-Package marginnote Info: xpos seems to be 131.11996pt on input line 76.
+Package marginnote Info: xpos seems to be 131.11996pt on input line 77.
  [6 <./Bilddateien/ThomsonModell.png> <./Bilddateien/Streuversuch_Rutherford.sv
 g.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 79--93
+Underfull \hbox (badness 10000) in paragraph at lines 80--94
 
  []
 
-) [7] (./main.aux)
+) (./Notes/lec5.tex
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 4.
+
+Package marginnote Info: xpos seems to be 128.03738pt on input line 4.
+<Bilddateien/physiko.21.45_9783110445671-fig_001.jpg, id=133, 117.0774pt x 50.3
+481pt>
+File: Bilddateien/physiko.21.45_9783110445671-fig_001.jpg Graphic file (type jp
+g)
+<use Bilddateien/physiko.21.45_9783110445671-fig_001.jpg>
+Package pdftex.def Info: Bilddateien/physiko.21.45_9783110445671-fig_001.jpg  u
+sed on input line 28.
+(pdftex.def)             Requested size: 142.26378pt x 61.18642pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 29.
+
+
+Package hyperref Warning: Suppressing empty link on input line 29.
+
+[7{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}]
+Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 48
+.
+Package marginnote Info: xpos seems to be 102.66722pt on input line 48.
+<Bilddateien/physiko.21.45_9783110445671-fig_002.jpg, id=153, 128.8815pt x 46.4
+937pt>
+File: Bilddateien/physiko.21.45_9783110445671-fig_002.jpg Graphic file (type jp
+g)
+<use Bilddateien/physiko.21.45_9783110445671-fig_002.jpg>
+Package pdftex.def Info: Bilddateien/physiko.21.45_9783110445671-fig_002.jpg  u
+sed on input line 53.
+(pdftex.def)             Requested size: 142.26378pt x 51.32341pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 54.
+
+
+Package hyperref Warning: Suppressing empty link on input line 54.
+
+[8 <./Bilddateien/physiko.21.45_9783110445671-fig_001.jpg>]
+Package marginnote Info: Margin note 9.1 is on absolute page 9 on input line 66
+.
+Package marginnote Info: xpos seems to be 131.03677pt on input line 66.
+Package marginnote Info: Margin note 9.2 is on absolute page 9 on input line 67
+.
+Package marginnote Info: xpos seems to be 131.11996pt on input line 67.
+) [9 <./Bilddateien/physiko.21.45_9783110445671-fig_002.jpg>] (./Anhang/Literat
+ur.tex) [10]
+(./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2396,47 +2487,63 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 022C708D239A6C0576EA18D1C2A65D3B;1253.
  ) 
 Here is how much of TeX's memory you used:
- 61042 strings out of 476025
- 1437117 string characters out of 14540017
- 17056657 words of memory out of 20000000
- 80101 multiletter control sequences out of 15000+600000
- 547940 words of font info for 229 fonts, out of 8000000 for 9000
+ 61178 strings out of 476025
+ 1439418 string characters out of 14540017
+ 17056885 words of memory out of 20000000
+ 80154 multiletter control sequences out of 15000+600000
+ 554899 words of font info for 262 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 143i,21n,137p,1089b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
-b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
-ve/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/cm-super/sfbl1000.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfst1000.pfb></usr/local/texlive/2023/texmf-dist/f
-onts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2023/texmf-dist/fon
-ts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2023/texmf-dist/fonts
-/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
-ype1/urw/zapfding/uzdr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
-ic/wasy-type1/wasy9.pfb>
-Output written on main.pdf (7 pages, 672638 bytes).
+ 143i,20n,137p,1089b,1180s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb>
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+23/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/public/cm-super/sfbl1000.pfb></usr/local/texlive/2023/texmf-dist/fon
+ts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts
+/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
+ype1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
+/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
+c/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
+cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm
+-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-s
+uper/sfst1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
+er/sfti0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super
+/sfti0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
+fti0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sft
+i0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1
+000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt100
+0.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/wasy-type1/wasy9.pfb>
+Output written on main.pdf (10 pages, 922938 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 55876 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 72782 words of extra memory for PDF output out of 74296 (max. 10000000)
 
