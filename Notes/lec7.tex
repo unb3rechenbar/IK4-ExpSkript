@@ -1,0 +1,12 @@
+\documentclass{article}
+
+\begin{document}
+    \marginnote{\textbf{\textit{VL 7}}\\21.04.2023, 11:45}{-1cm}
+
+    Die induzierte Emission folgt dem Zusammenhang $dN_{I,21} = \lint{B_{21}\cdot u(\nu, t)\cdot N_2}{t}{}$. Im thermischen Gleichgewicht gilt
+    \[dN_{12} = dN_{E,21} + dN_{I,21},\]
+    also nach Definitionen 
+    \[\frac{N_2}{N_1} = \frac{B_{12}\cdot u(\nu,t)}{A_{21} + B_{21}\cdot u(\nu,t)} \Leftrightarrow \frac{N_2}{N_1} = \frac{\exo(E_2/(k_B\cdot T))}{\exp(E_1/(k_B\cdot T))},\]
+    bei welchen der Zähler und Nenner sogenannte \href{https://de.wikipedia.org/wiki/Boltzmann-Statistik}{\emph{Boltzmann-Faktoren}} sind. Mit $E_2-E_1 = h\cdot\nu$ folgt dann insgesamt 
+    \[u(\nu,t) = \frac{A_{21}}{B_{12}\cdot\exp(h\cdot\nu/(k_B\cdot T)) - B_{21}}.\]
+\end{document}
