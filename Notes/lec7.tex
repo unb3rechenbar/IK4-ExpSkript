@@ -1,7 +1,7 @@
 \documentclass{article}
 
 \begin{document}
-    \marginnote{\textbf{\textit{VL 7}}\\21.04.2023, 11:45}{-1cm}
+    \marginnote{\textbf{\textit{VL 7}}\\21.04.2023, 11:45}[-1cm]
 
     Die induzierte Emission folgt dem Zusammenhang $dN_{I,21} = \lint{B_{21}\cdot u(\nu, t)\cdot N_2}{t}{}$. Im thermischen Gleichgewicht gilt
     \[dN_{12} = dN_{E,21} + dN_{I,21},\]
@@ -9,4 +9,35 @@
     \[\frac{N_2}{N_1} = \frac{B_{12}\cdot u(\nu,t)}{A_{21} + B_{21}\cdot u(\nu,t)} \Leftrightarrow \frac{N_2}{N_1} = \frac{\exo(E_2/(k_B\cdot T))}{\exp(E_1/(k_B\cdot T))},\]
     bei welchen der Zähler und Nenner sogenannte \href{https://de.wikipedia.org/wiki/Boltzmann-Statistik}{\emph{Boltzmann-Faktoren}} sind. Mit $E_2-E_1 = h\cdot\nu$ folgt dann insgesamt 
     \[u(\nu,t) = \frac{A_{21}}{B_{12}\cdot\exp(h\cdot\nu/(k_B\cdot T)) - B_{21}}.\]
+
+    \begin{itemize}
+        \item Für $T\to\infty$ muss $u\to\infty$ gelten, da sonst die Emission nicht mehr möglich wäre. Dies folgt aus der Definition von $u$. Weiter folgt mit \enquote{physikalischer Argumentation} $B_{12} = B_{21}$.
+        \item Für $h\cdot\nu \ll k_B\cdot T$ (das R.J. Gesetz ist hier gut genug) folgt 
+        \[exp(h\cdot\nu / (k_B\cdot T))\approx 1+\frac{h\cdot\nu}{k_B\cdot T}+\text{TAF}_{f,x_0}(x)\]
+        mit passend gewählten $f,x_0,x$ durch Taylorapproximation. Daher gilt
+        \[u(\nu,T) = \frac{A_{21}}{B_{12}}\cdot\frac{k_B\cdot T}{h\cdot\nu}\]
+        mit $A_{21}/B_{12} = 8\pi h\cdot\nu^3/c_0^3$, sodaß 
+        \[u(\nu,T) = \frac{8\pi h\cdot\nu^3}{c_0^3} \cdot\frac{1}{\exp(h\cdot\nu /(k_B\cdot t)) - 1}.\]
+        Es ist dann $u(\nu,T) \cdot d\nu$ die spektrale Energiedichte im Frequenzbereich $d\nu$ pro Volumen. 
+        \item Betrachte die gesamte Energiedichte 
+        \[U(T) = \lint{u(\nu,T)}{\nu}{\R_{\geq 0}} = \frac{8\pi h}{c_0^3}\cdot\lint{\frac{\nu^3}{\exp(h\cdot\nu/(k_B\cdot T)) - 1}}{\nu}{\R_{\geq 0}}\]
+        und mit Substitution $x = h\nu / (k_B\cdot T)$ schließlich 
+        \[U(T) = \frac{8\pi h}{c_0^3} \cdot\nbra{\frac{k_B\cdot T}{h}}^4\cdot\lint{\frac{x^3}{\exp(x)-1}}{x}{\R_{\geq 0}} = \frac{8\cdot\pi^5 k_B^3}{15\cdot c_0^3\cdot h^3}\cdot T^4,\]
+        auch bekannt als das \emph{Stephan-Boltzmann-Gesetz}.
+    \end{itemize}
+    \begin{Aufgabe}
+        \nr{} Führe die angedeutete Substitution in $U$ in der Herleitung des Stephan-Boltzmann-Gesetzes durch und zeige, dass die Energie pro Volumen $U(T)$ proportional zu $T^4$ ist. Benenne den Faktor durch $\sigma_B$. 
+        
+        \nr{} Wechsle die Eingabe von $U$ von $T$ nach $\lambda$, indem du $U$ mit passendem $\Phi$ verkettest.
+    \end{Aufgabe}
+    Für das Maximum der Funktion $U$ muss zunächst $\kritPkt{U}$ durch die Gleichung $dU(\lambda)(h) = 0_\R$ bestimmt werden. Lösungen und damit Einträge von $\argmax{U}$ sind $x=(h\cdot c_0)/(k_B\cdot T\cdot\lambda)$ und (numerisch bestimmt) $x = 5\cdot (1-\exp(x))$. Die numerische Lösung ist $x\approx 4.965114$. Umstellen liefert sodann 
+    \[T\cdot\lambda_\textit{max} = \frac{h\cdot c_0}{4.95114\cdot k_B}\approx 2.998\cdot 10^{-3}\si{\metre\kelvin}.\]
+
+    \begin{Aufgabe}
+        \nr{} Recherchiere das \emph{Wiensche-Verschiebungsgesetz}. Wie hängt es mit der skizzierten Maximumssuche zusammen?
+
+        \nr{} Folge der Anweisung oben. Bestimme $dU(\lambda)(h)$ und löse $dU(\lamnda)(h) = 0$. Verifiziere die Lösung $x=(h\cdot c_0)/(k_B\cdot T\cdot\lambda)$. 
+
+        \nr{} Bestimme nummerisch die Lösung der Gleichung. 
+    \end{Aufgabe}
 \end{document}
