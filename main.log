@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  21 APR 2023 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  24 APR 2023 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2129,6 +2129,12 @@ LaTeX Warning: Label `nr:1={}' multiply defined.
 
 LaTeX Warning: Label `nr:1={}' multiply defined.
 
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
+
+LaTeX Warning: Label `nr:1={}' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -2379,13 +2385,8 @@ Underfull \hbox (badness 1845) in paragraph at lines 53--55
 r[] \T1/cmr/m/it/10 (+20) ist ge-füllt mit über-sät-tig-tem Was-ser-dampf,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-3.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+9.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -2402,14 +2403,18 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=36.0pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
-3.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 5
+9.
 
 
 Overfull \vbox (24.0pt too high) has occurred while \output is active []
 
- [2])
-(./Notes/lec3.tex
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+) (./Notes/lec3.tex
 Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 4.
 
 Package marginnote Info: xpos seems to be 128.03738pt on input line 4.
@@ -2674,7 +2679,507 @@ and I'll forget about whatever was undefined.
 Package marginnote Info: Margin note 14.2 is on absolute page 14 on input line 
 41.
 Package marginnote Info: xpos seems to be 102.66722pt on input line 41.
-) [14] (./Anhang/Literatur.tex
+) (./Notes/lec8.tex
+Package marginnote Info: Margin note 14.3 is on absolute page 14 on input line 
+5.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 6--9
+[] \T1/cmr/m/it/10 (+20) Be-strah-len der Pho-to-plat-te mit und oh-ne Glas-sch
+ei-be. Oh-ne Schei-be ist
+ []
+
+<Bilddateien/UvonNu-Photoeffekt.png, id=268, 451.6875pt x 314.17375pt>
+File: Bilddateien/UvonNu-Photoeffekt.png Graphic file (type png)
+<use Bilddateien/UvonNu-Photoeffekt.png>
+Package pdftex.def Info: Bilddateien/UvonNu-Photoeffekt.png  used on input line
+ 29.
+(pdftex.def)             Requested size: 142.26378pt x 98.95087pt.
+<Bilddateien/Saettigungsstrom-Photoeffekt.png, id=271, 452.69125pt x 279.0425pt
+>
+File: Bilddateien/Saettigungsstrom-Photoeffekt.png Graphic file (type png)
+<use Bilddateien/Saettigungsstrom-Photoeffekt.png>
+Package pdftex.def Info: Bilddateien/Saettigungsstrom-Photoeffekt.png  used on 
+input line 35.
+(pdftex.def)             Requested size: 142.26378pt x 87.69022pt.
+[14]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.50         \[E_\textit{\gamma}
+                                (\nu) = h\cdot\nu =: \hbar\cdot \omega(\nu)\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.50 ...\cdot k,\quad \hbar:=\frac{h}{2\cdot\pi}\]
+                                                  
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+Package marginnote Info: Margin note 15.1 is on absolute page 15 on input line 
+57.
+Package marginnote Info: xpos seems to be 131.12973pt on input line 57.
+<Bilddateien/ComptonAufbau.png, id=285, 553.06625pt x 343.2825pt>
+File: Bilddateien/ComptonAufbau.png Graphic file (type png)
+<use Bilddateien/ComptonAufbau.png>
+Package pdftex.def Info: Bilddateien/ComptonAufbau.png  used on input line 66.
+(pdftex.def)             Requested size: 113.81102pt x 70.6405pt.
+<Bilddateien/ComptonEffektMessung.png, id=286, 367.3725pt x 283.0575pt>
+File: Bilddateien/ComptonEffektMessung.png Graphic file (type png)
+<use Bilddateien/ComptonEffektMessung.png>
+Package pdftex.def Info: Bilddateien/ComptonEffektMessung.png  used on input li
+ne 72.
+(pdftex.def)             Requested size: 113.81102pt x 87.69077pt.
+<Bilddateien/ComptonKollision.png, id=287, 454.69875pt x 295.1025pt>
+File: Bilddateien/ComptonKollision.png Graphic file (type png)
+<use Bilddateien/ComptonKollision.png>
+Package pdftex.def Info: Bilddateien/ComptonKollision.png  used on input line 7
+8.
+(pdftex.def)             Requested size: 113.81102pt x 73.861pt.
+[15 <./Bilddateien/UvonNu-Photoeffekt.png> <./Bilddateien/Saettigungsstrom-Phot
+oeffekt.png>]
+Package marginnote Info: Margin note 16.1 is on absolute page 17 on input line 
+99.
+Package marginnote Info: xpos seems to be 131.16013pt on input line 99.
+ [16 <./Bilddateien/ComptonAufbau.png> <./Bilddateien/ComptonEffektMessung.png>
+ <./Bilddateien/ComptonKollision.png>]) [17]
+(./Anhang/Literatur.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 []\T1/cmr/m/n/10 (+20) Wikipedia (2023). \T1/cmr/m/it/10 (+20) Kern-po-ten-ti-a
 l\T1/cmr/m/n/10 (+20) . URL: []$\T1/cmtt/m/n/10 https : / / de . wikipedia . or
@@ -2694,7 +3199,19 @@ Underfull \hbox (badness 1360) in paragraph at lines 8--9
 er Planck-schen Strah-lungs-for-mel nach Ein-
  []
 
-) [15] (./main.aux)
+
+Underfull \hbox (badness 3568) in paragraph at lines 10--11
+\T1/cmtt/m/n/10 ch / static / content / science / BuchPhysikIV / PhysikIVch2 . 
+html$[]\T1/cmr/m/n/10 (+20) , ab-ge-ru-fen am
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 11--12
+\T1/cmtt/m/n/10 ethz . ch / static / content / science / BuchPhysikIV / PhysikI
+Vch4 . html$[]\T1/cmr/m/n/10 (+20) , ab-ge-u-fen
+ []
+
+) [18] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2702,13 +3219,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 70794D49437674A261A4CF7327FCE488;1850.
  ) 
 Here is how much of TeX's memory you used:
- 61362 strings out of 476025
- 1443430 string characters out of 14540017
- 17057965 words of memory out of 20000000
- 80251 multiletter control sequences out of 15000+600000
- 556065 words of font info for 277 fonts, out of 8000000 for 9000
+ 61481 strings out of 476025
+ 1446080 string characters out of 14540017
+ 17058170 words of memory out of 20000000
+ 80328 multiletter control sequences out of 15000+600000
+ 556760 words of font info for 286 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 143i,21n,137p,1078b,1244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,21n,137p,1078b,1420s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -2723,47 +3240,49 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fo
-nts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/public/cm-super/sfbl1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
-1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
-public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
-/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-supe
-r/sfst1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/
-sfti0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
-ti0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti
-0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti09
-00.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000
-.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.p
-fb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/wasy-type1/wasy9.pfb>
-Output written on main.pdf (15 pages, 1054629 bytes).
+local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/font
+s/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/
+type1/public/cm-super/sfbl1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
+public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
+/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/c
+m-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-
+super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/
+sfst1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
+ti0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti
+0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti07
+00.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0800
+.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0900.p
+fb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/wasy-type1/wasy9.pfb>
+Output written on main.pdf (18 pages, 1203615 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 72816 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 410 compressed objects within 5 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 72841 words of extra memory for PDF output out of 74296 (max. 10000000)
 
