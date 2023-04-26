@@ -1,4 +1,4 @@
-# IK4-ExpSkript
+# Skript zur Experimentalphysik II
 ### Geschrieben von Tom Folgmann
 #### SoSe2023
 
