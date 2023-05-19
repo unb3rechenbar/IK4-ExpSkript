@@ -1,0 +1,34 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \subsection{Modell}
+        \marginnote{\textbf{\textit{VL 10}}\\19.05.2023, 11:45}
+        Um die Spektren zu erklären, entwickelte Niels Bohr 1913 ein Modell, welches die Elektronenhülle als diskretes System beschreibt. Es handelt sich dabei im Wesentlichen um eine \emph{Klassifizierung} der eigentlich quantenmechanischen Zustände, welche zum damaligen Zeitpunkt einer Erklärung oder sogar Entdeckung noch schuldig waren. Es verwendet also klassische Annahmen und Argumentationen zur Beschreibung der Beobachtungen. Die Grundlage stellen dabei die \emph{Bohrschen Postulate} dar:
+        \begin{enumerate}[label=(\roman*)]
+            \item Die Elektronen bewegen sich auf \emph{Kreisbahnen} um den Kern. Der Radius berechnet sich dabei aus dem Kräftegleichgewicht der \emph{Coulombkraft} und der \emph{Zentrifugalkraft}: $F_C := mv^2/r \stackrel{!}{=} 1/(4\pi\epsilon_0)\cdot e^2/r^2$. Daraus lässt sich eine Radiusgleichung herleiten. 
+            \item Die Elektronen können nur \emph{diskrete} Bahnen einnehmen. Aus der energetischen Perspektive folgt mit $E = E_\textit{kin} + E_\textit{pot}$ und $E_\textit{kin} = 1/2\cdot mv^2$ bzw. $E_\textit{pot}(r) = \int F_{C}(\rho)\dint{\rho}{\R_{>r}}$. Hier greift nun der Inhalt des Postulates. 
+            \item Die Elektronenbewegung erfolgt auf ihren Bahnen \emph{strahlungslos}, sodaß Strahlung einen \emph{Sprung} zwischen den Bahnen erfordert. Die abgegebene Energie ist dabei $E_n-E_m = h\cdot \nu_{n\to m}$. Die \emph{Rydberg-Formel} liefert dabei den Folgenzusammenhang $E = \bbra{-R\cdot h\cdot c_0/(n^2)}_{n\in\N}$. 
+            \item Für Grenzwertige $E_n$ entspricht die Bahnumlauffrequenz des Elektrons der beim Sprung emittierten Strahlungsfrequenz. Man würde heute vom sogenannten \emph{Korrespondenzprinzip} sprechen. 
+        \end{enumerate}
+
+        \begin{Aufgabe}
+            \nr{} Berechne die Radiusgleichung und folgere daraus die Energiegleichung. 
+        \end{Aufgabe}
+
+        Für einen Übergang aus $n\in\N_{>k}$ nach $n-k$ für $k\in\N$ ergibt sich die \emph{Bohrsche Frequenzformel}:
+        \[\nu_{n\to n-k} = \frac{R\cdot c_0}{n^2}\cdot\nbra{\frac{1}{(n-k)^2} - \frac{1}{n^2}} = \frac{R\cdot c_0}{n^2}\cdot\nbra{\frac{1}{(1-k/n)^2 - 1}},\]
+        wobei durch Taylorentwicklung im Fall $k = 1$ der Zusammenhang $\nu_{n\to n-1} \approx R\cdot c_0\cdot n^{-3}$ folgt. 
+        
+        \begin{Aufgabe}
+            \nr{} Betrachte noch einmal die Gesamtenergie $E(r) = (E_\textit{kin} + E_\textit{pot})(r)$. Setze $r(\nu) = r/(2\pi\cdot\nu)$ ein.
+        \end{Aufgabe}
+
+        Für den Bahnradius im Bohr Modell ergibt sich also
+        \[r = \fdef{\frac{\epsilon_0\cdot h^2}{\pi\cdot m_e\cdot e^2}\cdot n^2}{n\in\N},\]
+        bzw $r_1 =: a_0$ als konkreter \emph{Bohrradius}. Der Drehimpuls $L\in\R$ ergibt sich für den Aufenthaltsvektor $R_n:=r_n\cdot \mce$ mit $\mce$ als Linearkombination der Basisvektoren $\underline e$ mit der Normbetrachtung
+        \[\dabs{L_n}{2} = \dabs{R_n\times p_n}{2} = r_n\cdot m\cdot v_n = n\cdot\hbar.\]
+
+
+        \subsubsection*{Problematiken}
+            Sofort fällt einem bei der Betrachtung und gerade dem Vergleich mit heutigen Theorien die fehlende Erklärung der Quantisierung auf. Zwar läuft der Ansatz der Diskretisierung in die richtige Richtung, steht jedoch auf einem instabilen Postulat an der Grenze der klassischen Physik. Weiter ist unklar, weshalb das angenommene Atommodell überhaupt zeitlich stabil sein sollte, also nicht in sich zusammenfällt. Für weitere Aufspaltungen im Spektrum, welche experimentell nachweisbar sind, ist das Modell ebenso nicht geeignet. Der Variation der Linien und der generellen Betrachtung der Spektren in \emph{elektromagnetischen Feldern} ist das Modell ebenfalls nicht gewachsen. Schlussendlich ist das Modell auch nur definiert auf \emph{Einelektronensystemen}, was die Betrachtung von Mehrkörpersystemen ausschließt.
+\end{document}
