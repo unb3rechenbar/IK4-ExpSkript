@@ -1,0 +1,28 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textit{\textbf{VL 11}}\\25.05.2023, 10:00}
+    \subsubsection*{Beispiele}
+        Als Beispiel des Bohrschen Atommodells lässt sich der \emph{Franck Hertz Versuch} [$\to$ AP4] herbeiführen. 
+        \begin{Aufgabe}
+            \nr{} Recherchiere zum Vesuch und finde weitere Beispiele. Warum zeigt der Franck Hertz Versuch die Quantisierung?
+        \end{Aufgabe}
+
+    \section{Wechselwirkung mit elektromagnetischen Feldern}
+        \subsection{Vorbereitung}
+            Wir nehmen an, daß wir die Lösung der Schrödingergleichung für ein bestimmtes Teilchen kennen, meistens das Wasserstoffatom. Wir kennen also $\psi\in\mcH$ mit $H\psi = \lambda_\psi\cdot\psi$ zum Eigenwert $\lambda$ und haben eine Basis $(\psi_i)_{i\in I}$ des Hilbertraums $\mcH$. Betrachte die Änderung 
+            \[\delta \id_{L_S(\mcH)}(H)(h) = \id_{L_S(\mcH)} + \id_{L_S(\mcH)}(H + h).\]
+            Stelle also den Differentialquotienten 
+            \[\frac{H(0) - H(h)}{h} = H'(0) = \delta H(0)(h)\]
+            auf, sodaß wir $H'(0)$ als Operator auf $\mcH$ erhalten. Die neue Schrödingergleichung lautet also
+            \[(\delta H(0)(h))\Bbra{\sum_{n\in\N}h^n\cdot\psi_i^n} = \lambda_{\psi_i}\cdot\Bbra{\sum_{n\in\N}h^n\cdot\psi_i^n},\]
+            wobei wir $\psi_i$ reihenentwickelt haben. Die Korrektur erster Ordnung liefert uns den Eigenwertzusammenhang
+            \[\lambda_{\psi_i}^1 = \scpr{\psi_i}{(\delta H(0)(h))(\psi_i)}_\mcH.\]
+            Wir stellen also fest, daß die Korrektur der ersten Ordnung der Erwartungswert der Störung in ungestörten Zuständen ist. Insgesamt gilt $\lambda_i = \lambda_i^0 + \lambda_i^1$. Dabei ist der Skalarproduktausdruck ein Diagonaleintrag einer $d\times d$ Matrix (im endlichdimensionalen Fall). 
+            \subsubsection*{Übergangswahrscheinlichkeit}
+                Als \emph{Übergangswahrscheinlichkeit} bezeichnen wir das Funktionsergebnis von
+                \[\Gamma:=\fdef{\frac{2\pi}{\hbar}\cdot\int_{\sigma_\mcA}\abs{x}^2\;\delta_{\lambda_{\psi_b},\mcA}(dx)}{(a,b)\in[n]^2}\]
+                mit $A_h$ als Sigmaalgebra von $\sigma(\delta H(0)(h))$ und $\sigma_{\mcA_h}$ als Spektrum von $\delta H(0)(h)$.
+            
+
+\end{document}
