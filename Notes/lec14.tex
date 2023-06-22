@@ -1,0 +1,33 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textit{\textbf{VL 14}}\\19.06.2023, 11:45}
+
+    \subsubsection{Der Zeemann-Effekt}
+        Unter dem \emph{Zeemann Effekt} versteht man die Aufspaltung der Spektrallinien eines Atoms in einem äußeren Magnetfeld. Dieser Effekt wurde 1896 von Pieter Zeeman entdeckt und 1902 mit dem Nobelpreis ausgezeichnet. Er ist ein Beispiel für die Wechselwirkung zwischen dem magnetischen Moment eines Elektrons und einem externen Magnetfeld. Die Aufspaltung der Spektrallinien ist dabei ein direkter Nachweis für die Quantisierung des Drehimpulses. Man unterscheidet zwischen dem \emph{normalen} und dem \emph{anomalen} Zeeman-Effekt. 
+
+    \subsection{Freies Elektron im Magnetfeld}
+
+        Mit dem sogenannten \emph{Landau Ansatz} sei $A:=\bbra{(0,x\cdot B(x),0)}_{x\in\mcH}$ ein Vektorpotential. Dann gilt für den Hamiltonoperator 
+        \[
+            H = \bbbra{\frac{1}{2\cdot m_e}\cdot\bbra{p(x) - e\cdot A(x)}}_{x\in\mcH},
+        \]
+        sodaß in ausgeschriebener Form für ein $x\in\mcH$ gilt
+        \[
+            H(x) = \frac{1}{8\cdot m_e}\cdot \bbbra{p_1^2(x) + \bbra{p(x)_2 - e\cdot B(x)\cdot x}^2 + p_2^2(x)}.
+        \]
+        Mit dem Ansatz $\psi:=\bbra{\exp(\cmath\cdot (k_3\cdot x_3 + k_2\cdot y))\cdot f(x_1)}_{x\in\R^3}\in\mcL^2(\R^3)$ mit $f\in\mcL^2(\R^3)$ können wir die Eigenwertgleichung $H\psi = \lambda\cdot\psi$ lösen.
+        \begin{Aufgabe}
+            \nr{} Setze $\psi$ in $H$ ein. Welche Quantenzahl bleibt übrig?
+        \end{Aufgabe}
+        Definiere die \emph{Zyklothronfrequenz} als $\omega_c:=e\cdot B/m_e$ und $x_0 = \hbar\cdot k_2/(m\cdot\omega_c)$, dann lässt sich das Ergebnis der Aufgabe ausschreiben zu 
+        \[
+            \bbbra{\ubra{\frac{-\hbar^2}{2m_e}\cdot \Bbra{\dv{x}}^2 + \frac{1}{2}\cdot m_e\cdot\omega_c\cdot\bbra{x-x_0}^2}{\text{harmonischer Oszillator}} + \ubra{\frac{\hbar^2\cdot k_3^2}{2m_e}}{\text{freie Energie in }z}}(f)(x) = \lambda\cdot f(x).
+        \] 
+        \subsubsection*{Eigenwertbetrachtung}
+            Wir hatten bereits als Eigenwertfolge des harmonischen Oszillators $U\mapsto \lambda:=\bbra{\hbar\cdot\omega_e\cdot (n+\dim(U)/2)}_{n\in\N}$ gesehen, wobei $U$ der Unterraum der Schwingung darstellt. Im eindimensionalen Falle wähle $U = \R$ und korrigiere um den Faktor $\hbar^2\cdot k_3/(2\cdot m_e)$. Für die Wellenfunktion erhalte
+            \[
+                \psi := \Bbbra{C\cdot\exp(\cmath\cdot (k_3\cdot x_3 + k_2\cdot x_2))\cdot\exp(-\frac{e\cdot B}{2\hbar}\cdot (x-x_0)^2)\cdot H_n\bbbra{\sqrt{\frac{e\cdot B}{\hbar}}\cdot (x-x_0)}}_{x\in\R^3},
+            \]
+            wobei $H_n$ das $n$-te Hermitepolynom ist [$\to$ IK4T]. 
+\end{document}

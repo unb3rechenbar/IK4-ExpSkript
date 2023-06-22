@@ -1,0 +1,37 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textit{\textbf{VL 15}}\\21.06.2021, 08:15}
+
+    Die Systemzustände werden bei verschwindendem Magnetfeld $B = 0$ auf die \emph{Landau Zustände} umverteilt. Für die Entartung gilt dann
+    \[
+        E = \frac{S_{n,n+1}}{S_0} = \frac{2\pi m\omega_c}{\hbar},
+    \]
+
+    \subsection{Felder und Potentiale in der Quantenphysik}
+        Mit der Felddarstellung $E = -div\varphi - \dv{t} A$ und $B = \rot A$ können wir in die Quantenphysik durch die Transformation $\Phi:= \varphi - \dv{t}\Lambda$ und $\mcA := A + \div\Lambda$, wobei $\Lambda\in\C^1(\R\times\R^3,\R)$.
+        \begin{Experiment}{Gedankenexperiment}
+            Stelle dir ein Elektron auf einer Kreisbahn mit festem Radius $r\in\R_{>0}$ um eine feste Achse $R\in\R^3$ vor. Setze nun eine Dünne Spule mit Durchmesser $d_S < 2r$ entlang $R$ ein, durch welche ein Strom $I$ fließt. Sei die Spule ideal, also unendlich ausgedehnt und dicht gewickelt. Mit dem Satz von Stokes gilt dann
+            \[
+                \rot B = \mu_0\cdot j \implies \int_{\partial F} \scpr{B}{\psi(t)}\;dt = \mu_0\cdot I,
+            \]
+            wobei $\psi$ auf der Kurve $\partial F$ die Normalen ausgibt. Durch geschickte Wahl der Fläche $F$ (siehe IK2 Klausur) können wir mit der Kantenlänge $L$ innerhalb der Spule eines angenommenen Quadrates multiplizieren, sodaß für das innere Magnetfeld $B\cdot L = \mu_0\cdot I\cdot N$ gilt. Für das äußere Magnetfeld gilt dann $B = 0$. Wir erhalten für das Potentialfeld $A$ dann
+            \[
+                A = \fdef{\frac{\mu_0\cdot N\cdot I}{2\cdot L}\cdot \begin{cases}
+                    \frac{r^2}{a}\cdot\underline e_{\varphi} \\
+                    a\cdot \underline e_\varphi
+                \end{cases}}{a\in\R^3}.
+            \]
+            \begin{Aufgabe}
+                \nr{} Stelle den Hamiltonoperator für ein Elektron ohne Spin in dieser Konfiguration auf. Wähle dann eine Substitution $\beta$ und $\epsilon$, sodaß du auf die Form der Oszillatorgleichung $-\lambda^2 + 2\beta\cdot\lambda + \epsilon = 0$ kommst. Daraus kann man nun folgern, daß die Energieeigenwerte des Elektrons in der Spule gequantelt sind.
+            \end{Aufgabe}
+            Wir können die Funktion 
+            \[
+                E :=\fdef{\frac{\hbar^2}{2\cdot m\cdot d_S}\cdot \nbra{n - \frac{e\cdot\Phi}{2\pi\cdot h}}^2}{n\in\Z}
+            \]
+            ableiten. Das spannende hierbei ist, daß es außerhalb, also in Umgebung des Elektrons, \emph{kein} Feld vorliegt, jedoch trotzdem eine Auswirkung auf das Elektron erkennbar ist.
+            \begin{Aufgabe}
+                \nr{} Recherchiere zu diesem Problem weiter unter \href{https://en.wikipedia.org/wiki/Aharonov–Bohm_effect}{Aharanov-Bohm-Effekt} und \href{https://www.thphys.uni-heidelberg.de/~wolschin/qms1920_5s.pdf}{Quantenmechanik Skript}.
+            \end{Aufgabe}
+        \end{Experiment}
+\end{document}
