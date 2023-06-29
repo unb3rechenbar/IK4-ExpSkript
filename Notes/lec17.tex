@@ -26,10 +26,11 @@
 
         \nr{} Berechne den Kommutator $[H_{V,S,n},J_3] = \cmath\hbar\lambda\cdot (J\times S)_z\neq 0$ mit $\lambda\in\R$ als Eigenwert von $J_3$. Recherchiere dazu den Zusammenhang zur \href{https://en.wikipedia.org/wiki/Fine-structure_constant}{\emph{Feinstrukturkonstante}}.
     \end{Aufgabe}
-    Es stellt sich heraus, daß die magnetische Quantenzahl unter Beachtung des Spins keine eindeutige Zuordung der Eigenfunktionen mehr stattfinden. Durch die \emph{Spin-Bahn-Kopplung} muss nun der Gesamtdrehimpuls $\mcJ = J + S$ betrachtet werden. Hier können wir dann eine neue Quantenzahl einführen: die \emph{Gesamtdrehimpulsquantenzahl} $j\in\N$. Dadurch wird das System erweitert: Wir haben $n\in\N$ als Hauptquantenzahl kennengelernt, $l \in [n - 1]$ als Nebenquantenzahl, $s\in\{-\hbar/2,\hbar/2\}$ als Spinquantenzahl und $m\in [l]_\Z$ als magnetische Quantenzahl. Nun kommt $j\in\R$ mit $j = \abs{l\pm s}$ und $m_j\in [j]_\Z$ als magnetische Gesamtdrehimpulsquantenzahl hinzu. Unser neues System zur Beschreibung ist also
+    Es stellt sich heraus, daß die magnetische Quantenzahl unter Beachtung des Spins keine eindeutige Zuordung der Eigenfunktionen mehr stattfinden. Durch die \emph{Spin-Bahn-Kopplung} muss nun der Gesamtdrehimpuls $\mcJ = J + S$ betrachtet werden. Hier können wir dann eine neue Quantenzahl einführen: die \emph{Gesamtdrehimpulsquantenzahl} $j\in\N$. Dadurch wird das System erweitert: Wir haben $n\in\N$ als Hauptquantenzahl kennengelernt, $l \in [n - 1]$ als Nebenquantenzahl, $s\in\{-1/2,1/2\}$ als Spinquantenzahl und $m\in [l]_\Z$ als magnetische Quantenzahl. Nun kommt $j\in \{l-s + n:n\in\N\}\cap[l-s,l+s]$ als \emph{Gesamtdrehimpulsquantenzahl} und $m_j\in \{-j + n:n\in\N\}\cap[-j,j]$ als \emph{magnetische Gesamtdrehimpulsquantenzahl} hinzu. Unser neues System zur Beschreibung ist also
     \[
-        n\mapsto (n,l_n,s,j_{l,s},m_j) \in\N\times [n-1]\times\{-\hbar/2,\hbar/2\}\times\R\times [j]_\Z.
+        (n,s)\mapsto (n,l_n,s,j_{l,s},m_j) \in\N\times [n-1]\times\{-\hbar/2,\hbar/2\}\times\R\times [j]_\Z
     \]
+    für ein Eingabetupel $(n,s)\in\N\times\{-1/2,1/2\}$.
     \begin{Aufgabe}
         \nr{} Definiere einmal die genauen Mengen, aus welchen die Quantenzahlen stammen. Fülle die Lücken in der obigen Definition aus.
 
