@@ -1,0 +1,39 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textbf{\textit{VL 21}}\\06.07.2023, 10:00}
+
+    Unter Berücksichtigung des Spins kann die Gesamtwellenfunktion aufgespaltet werden zu
+    \[
+        \Psi(r_1,r_2,s,m_s) = \psi_{a,b}(r_1,r_2)\cdot\chi(s,m_s)    
+    \]
+    mit $r\in(\R^3)^2$ und $s\in\R^3$ und $m_s\in\{-1/2,1/2\}^2$. 
+
+    \subsection{Pauli Prinzip}
+        Die Gesamtwellenfunktion eines Systems mit mehreren Elektronen ist immer antisymmetrisch gegen Vertauschung zweier Elektronen. In anderen Worten: 
+        Ein durch die Quantenzahlen $(n,l,m,m_s)\in\N\times[n-1]\times[l]_\Z\times\{1/2,-1/2\}$ vollständig beschriebener Zustand eines Atoms kann höchstens von einem Elektron besetzt werden. Wir können Teilchen anhand der Wellenfunktion und ihrer Symmetrie bzw. Antisymmetrie in zwei Klassen aufteilen:
+        \begin{enumerate}[label=(\roman*)]
+            \item Die \emph{Fermionen} sind Teilchen mit halbzahligem Spin, welche durch eine antisymmetrische Wellenfunktion beschrieben werden. In diese Kategorie fallen beispielsweise Elektronen, Protonen oder Neutronen.
+            \item Die \emph{Bosonen} sind Teilchen mit ganzzahligem Spin, welche durch eine symmetrische Wellenfunktion beschreiben werden. In diese Kategorie fallen beispielsweise Photonen.
+        \end{enumerate}
+
+    \subsection{Zwei Teilchen mit halbem Spin}
+        Für zwei Teilchen können die Spinsummationen $\mcS = m_s(1) + m_s(2) = 1$ oder $\mcS = 0$ vorkommen. Im ersten Fall können wir dann die Zustände $\ket{1,1}$, $\ket{1,0}$ und $\ket{1,-1}$ bilden, im zweiten Fall nur $\ket{0,0}$. Diese Schreibweise ist dabei als $(\mcS,M_\mcS)\mapsto \ket{\mcS,M_\mcS}$ zu verstehen. In Pfeilnotation können wir die Zustände dann schreiben als
+        \[
+            \ket{1,1} = \ket{\uparrow\uparrow},\quad\ket{1,0} = \frac{1}{\sqrt{2}}\bbra{\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow}},\quad\ket{1,-1} = \ket{\downarrow\downarrow},\quad\ket{0,0} = \frac{1}{\sqrt{2}}\bbra{\ket{\uparrow\downarrow} - \ket{\downarrow\uparrow}}.
+        \]
+        Alle Zustände mit einer $1$ im ersten Eintrag nennt man in einer Menge zusammengefasst ein \emph{Triplett}, der übrig bleibende Zustand ist dann ein \emph{Singulett}.
+        \begin{Aufgabe}
+            \nr{} Zeige $S^a\cdot S^b = \hbar^2/4$ für $\mcS = 1$ und $S^a\cdot S^b = -3\hbar^2/4$ für $\mcS = 0$. Welches Mal verbirgt sich zwischen den Spinoperatorentupel?
+        \end{Aufgabe}
+        \noindent Daraus können wir für die Energieeigenwerte von $H = A\cdot S^a\cdot S^b$ für $A\in\R$ ableiten durch 
+        \[
+            \mcS\mapsto \begin{cases}
+                \frac{\hbar^2\cdot A}{4} & \mcS = 1\\
+                -\frac{3\hbar^2\cdot A}{4} & \mcS = 0
+            \end{cases}.
+        \]
+        Unter dem Vorfaktor $A$ verstehen wir das sogenannte \href{https://de.wikipedia.org/wiki/Austauschwechselwirkung}{\emph{Austauschintegral}}. 
+
+
+\end{document}
