@@ -1,0 +1,38 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \subsection{Überblick: Spektrale Eigenwertaufspaltung}
+        Wir haben bereits die möglichen Aufspaltungen von Eigenwerten in verschiedenen Szenarien kennengelernt und diskutiert. Hier wollen wir diese noch einmal zusammenfassen. Beginnend mit dem \emph{idealen} Fall des Hamiltonoperators $H\in L_S(\mcH)$ eines Elektrons in einem Potential $V:\C\to\C$ können wir durch $H\ket{n} = E_n\cdot\ket{n}$ eine Eigenwertfolge $E:\N\to\C$ mit Eigenvektoren $\ket{n}\in\mcH$ definieren. In der ersten Erweiterung dieses Modells müssen wir unterscheiden zwischen \emph{spinfreien} und \emph{spinbehafteten} Perspektiven. Wir starten hier nun rückwärts mit dem spinbehafteten Fall. 
+
+        \subsubsection*{Spinbehafteter Fall}
+            Der spinbehaftete Fall führt die \emph{Spin-Bahn-Kopplung} ein. Hierbei wird ein erweiterter Hamiltonoperator $H_\textit{SB}\ket{n,l,j,s} = E(n,l,j,s)\cdot\ket{n,l,j,s}$ und ein erweitertes Set an Quantenzahlen $(n,l,j,s)\in\N\times[n-1]\times D_j\times\{\pm 1/2\}$ für $D_j:=\{j-s+n:n\in\N\}\cap[l-s,l+s]$ eingeführt. Diese Zahlen sortieren nun den Eigenvektoren $\ket{n,l,j,s}\in\mcH$ den entsprechenden Eigenwert durch die Funktionsdefinition
+            \[
+                E_\textit{SB}(n,l,j,s) := \ubra{\frac{\lambda}{2}\cdot\bbra{j\cdot(j+1) - l\cdot(l+1) - s\cdot(s+1)}}{=:\Phi_{\lambda_{l,s}}(j,l,s)} + E_n
+            \] 
+            zu. Die Bausteinfunktion $\Phi$ definieren wir dabei, um später klarer über die groben Konzepte sprechen zu können\footnote{Strenggenommen unterschlagen wir den Definitionsbereich des ersten Argumentes $\lambda$ von $\Phi$: Wir interpretieren den Eintrag hier als \enquote{Funktion mit passendem Definitonsbereich}, wobei für unsere Zwecke $\Abb{\R^2}{\R}$ ausreicht; Dann ist $\lambda:\R^2\to\R$ die \emph{Feinstrukturkonstantenabbildung}.}.
+
+            Führen wir unsere Überlegungen für die Anwesenheit eines Magnetfeldes fort, so fordern wir in einem vereinfachten Modell stets $B = (0,0,B_z)\in\R^3$. Man klassifiziert hier weiter durch die \emph{Stärke}, also $\dabs{B}{2}$, welchen Effekt man erwartet und zur Eigenwertbestimmung verwendet: für ein \emph{schwaches} Magnetfeld $\dabs{B}{2}$ verwendet man das Modell des \emph{anomalen Zeeman-Effekts} und für ein \emph{starkes} Magnetfeld $\dabs{B}{2}$ das Modell des \emph{Paschen-Back-Effekts}. Hierzu definieren wir erneut eine Bausteinfunktion $\Psi := \bbra{x\cdot\mu_B\cdot B_z}_{x\in\R}$, sodaß komparabel die Eigenwertfolgen festhalten können:
+            \begin{align*}
+                E_\textit{aZ}(n,l,j,s,m_j) :=& E_n + \Phi_{\lambda}(j,l,s) + \Psi(g_j\cdot m_j), \\
+                E_\textit{PB}(n,l,j,s,m_j,m_s) :=& E_n + \Phi_\lambda(j,l,s) + \Psi(g_j\cdot m_j) + \Psi(g_l\cdot m_l).
+            \end{align*}
+            Eine leicht veränderte Sammlung von Quantenzahlen ordnen hierbei nun als Funktionsargumente die Eigenwerte zu; Sie sind hier von der Form $(n,l,j,s,m_j,m_s)\in\N\times[n-1]\times D_j\times\{\pm 1/2\}\times D_{m,j}\times D_{m,s}$, wobei $D_{m,j} := \{-j + n:n\in\N\}\cap[-j,j]$ und $D_{m,s} := \{-s + n:n\in\N\}\cap[-s,s]$. 
+
+            Die zweite Erweiterung liefert nun die Hyperfeinstruktur, welche die Wechselwirkung des Elektrons mit dem Kern beschreibt. Hierbei wird ein weiterer Hamiltonoperator $H_\textit{HF}\ket{n,l,j,s,I,F} = E_\textit{HF}(n,l,j,s,I,F)\cdot\ket{n,l,j,s,I,F}$ und ein weiteres Set an Quantenzahlen $(n,l,j,s,I,F)\in\N\times[n-1]\times D_j\times\{\pm 1/2\}\times\N\times D_F$ für $D_F:=\{F-s+n:n\in\N\}\cap[I-s,I+s]$ eingeführt. Diese Zahlen sortieren nun den Eigenvektoren $\ket{n,l,j,s,I,F}\in\mcH$ den entsprechenden Eigenwert durch die Funktionsdefinition
+            \[
+                E_\textit{HF}(n,l,j,s,I,F) := E_n + \Phi_{\lambda}(j,l,s) + \Phi_{A}(F,j,I)
+            \]
+            zu. Dabei ist $A$ die \emph{Hyperfeinstruktur-Konstante}\footnote{Hier beachten wir in Anknüpfung an oben die Funktion $A:\R^2\to\R$ mit $x\mapsto A$ als konstante Abbildung auf die Hyperfeinstruktur-Konstante.}. 
+
+            \begin{Aufgabe}
+                \nr{} Recherchiere zu einer allgemeineren Beschreibungsmöglichkeit eines Flussvektors $B\in\R^3$. 
+            \end{Aufgabe}
+
+        \subsubsection*{Spinfreier Fall}
+            Für den spinfreien Fall haben wir bereits alle Werkzeuge genannt. Hier bleibt nur noch eine Zuordnung zu leisten: die \emph{Feinstruktur} ordnet als erste Erweiterung des Hamiltonoperators $H_{HF}$ den Eigenvektoren $\ket{n,l,j,F,I}$ die Eigenwerte der Hyperfeinstrukturfolge zu. Hierbei beachten wir eine technische Besonderheit: da eine Spinabwesenheit vorausgesetzt ist, folgern wir $s = 0$ und schreiben $E_\textit{HF}(n,l,0,F,I)$. 
+
+            Beim hinzuschalten eines externen Magnetfeldes $B$ unter derselben Voraussetzung wie oben erhalten wir den \emph{normalen Zeeman-Effekt} mit der Eigenwertfolge
+            \[
+                E_\textit{nZ}(n,m) := E_n + \Psi(m). 
+            \]
+\end{document}

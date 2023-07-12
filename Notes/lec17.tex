@@ -3,25 +3,40 @@
 \begin{document}
     \marginnote{\textit{\textbf{VL 17}}\\26.06.2023\\11:45}
 
-    Um die Wechselwirkung des Spins mit dem Magnetfeld zu beschreiben, wechseln wir in die semiklassische Betrachtungsperspektive. Gehe hierzu über in das Bezugssystem des Elektrons. Für eine mit Strom $I$ durchflossene Kurve mit eingeschlossener Fläche $A$ ergibt sich nach Biot Savart das Magnetfeld
+    Um die Wechselwirkung des Spins mit dem Magnetfeld zu beschreiben, wechseln wir in die semiklassische Betrachtungsperspektive. Gehe hierzu über in das Bezugssystem des sich um den Kern bewegenden Elektrons. Für eine mit Strom $I$ durchflossene Kurve, hier die Flugbahn des Elektrons, mit eingeschlossener Fläche $A$ ergibt sich nach Biot Savart das Magnetfeld
     \[
-        B = \fdef{\frac{\mu_0}{4\pi}\cdot\frac{I}{r^3}\cdot A}{r\in\R^3} = \fdef{
+        B(v) = \fdef{
             \frac{\mu_0\cdot Ze}{4\pi\cdot \dabs{r}{2}^3}\cdot(v \times r)
-        }{r\in\R^3}
+        }{r\in\R^3}\in L_S(\R^3)
     \]
-    mit $v\in\R^3$ als Rotationsgeschwindigkeit. Wir arbeiten jedoch hier nur ungefähr, denn die Hin- und Rücktransformation ist in relativistischer Anschauung nicht trivial. 
+    mit $v\in\R^3$ als Rotationsgeschwindigkeit.  
     \begin{Aufgabe}
-        \nr{} Führe die Berechnung unter Berücksichtigung der Lorentz Transformation durch. Verifiziere den Zusammenhang der beiden Lösungen durch den Faktor $1/2$ (\href{https://en.wikipedia.org/wiki/Thomas_precession}{\emph{Thomas Faktor}}). 
+        \nr{} Die hier angedeutete Transformation der Koordinatensysteme ist nach relativistischer Einsicht nicht mehr einfach. Führe die Berechnung unter Berücksichtigung der Lorentz Transformation durch. Verifiziere den Zusammenhang der beiden Lösungen durch den Faktor $1/2$ (\href{https://en.wikipedia.org/wiki/Thomas_precession}{\emph{Thomas Faktor}}). 
 
-        \nr{} Bestimme die Formel für das elektrische Feld: $\Delta E_{l,s}(r) \approx \frac{\mu_0\cdot Ze^2}{8\pi m_e^2\cdot \dabs{r}{2}^3}\cdot(\scpr{s}{l})$.
+        \nr{} Zeige nun, daß es sich bei $B:\R^3\to(\Abb{\R^3}{\R^3})$ tatsächlich um eine Abbildung in den Operatorraum der linearen stetigen Operatoren $L_S(\R^3)\subset\Abb{\R^3}{\R^3}$ handelt.
+
+        \nr{EnKorr} Bestimme den Energiekorrekturterm $E_{J,S}$ für das Magnetfeld. Im Ergebnis sollte er sich auf $E_{J,S} = 2\mu_B/\hbar\cdot \sum_{i\in[3]}S_i\circ (B_J)_i$ belaufen, wobei 
     \end{Aufgabe}
-    Daraus ergibt sich der um den Spin erweiterten Hamiltonoperator
+    
+    \noindent Transformieren wir $B(v)$ nun zu $B(J)$ mit $J = m_e\cdot (r\times v)$ als Drehimpulsoperator in $L_S(\R^3)$ und $m_e\in\R$ als Masse des Elektrons, so erhalten wir den Zusammenhang 
     \[
-        H_{V,S,n}:=\fdef{\frac{P_n^2(x)}{2m} + V(Q_n)(x) + \sum_{i\in[d]}(S_i\cdot J_i)(x)}{x\in\mcH},
+        B(J) = \fdef{
+            \frac{\mu\cdot Z\cdot e}{4\pi\cdot \dabs{r}{2}^3\cdot m_e}\cdot(J \times r)
+        }.
     \]
-    wobei $n\mapsto S_n$ ein \emph{Spinoperatortupel} und $n\mapsto J_s$ ein \emph{Drehimpulsoperatortupel} ist. $n\mapsto P_n$ und $n\mapsto Q_n$ bleiben wie gewohnt \emph{Impuls-} und \emph{Ortsoperatortupel}, $d\in\N$ stellt die Raumdimension dar.
+    Dies nutzen wir nun weiter aus, indem wir die in der Aufgabe \refex{EnKorr} berechnete Energiekorrektur $E_{J,S}$ mithilfe von $B_J$ ausschreiben. Dies führt uns zu dem ersten \emph{Energiekorrekturterm} des Hamiltonoperators des Systems im \emph{nicht relativistischen} Blickpunkt; Wir verzichten an dieser Stelle auf die Ausführung der konkreten Herleitung, da sie ebensowenig Inhalt der Vorlesung war und lassen sie als Übungsaufgabe.
+    \begin{Aufgabe}
+        \nr{} Führe eine Reihenentwicklung des Hamiltonoperators durch und identifiziere die ersten Terme als \emph{Energiekorrekturterme}.
+    \end{Aufgabe}
+    \noindent Daraus ergibt sich der um den Spin korrigierten Hamiltonoperator
+    \[
+        H_{V,J,S}:=\fdef{\frac{P^2(x)}{2m} + V(Q)(x) + \lambda_{J,S,0}\cdot\sum_{i\in[d]}(S_i\circ J_i)(x_i)}{x\in\R^d},
+    \]
+    wobei $n\mapsto S_n\in L_(\R)$ ein \emph{Spinoperatortupel} und $n\mapsto J_s\in L_S(\R)$ ein \emph{Drehimpulsoperatortupel} ist. $n\mapsto P_n$ und $n\mapsto Q_n$ bleiben wie gewohnt \emph{Impuls-} und \emph{Ortsoperatortupel}, $d\in\N$ stellt die Raumdimension dar. Wir nehmen hier stillschweigend an, daß die Operatoren $S,J\in L_S(\R^3)$ zerlegbar in Tupel dieser Form sind. 
 
     \begin{Aufgabe}
+        \nr{} Wann ist ein Operator $S\in L_S(\R^3)$ \emph{zerlegbar} in ein Tupel aus Operatoren $n\mapsto S_n$ mit $S_n\in L_S(\R)$?
+
         \nr{} Berechne die Eigenwerte von $S_3$ durch $S_3(x) = \lambda_3\cdot x$. Verifiziere $\lambda_3 = \hbar\cdot m$. 
 
         \nr{} Berechne den Kommutator $[H_{V,S,n},J_3] = \cmath\hbar\lambda\cdot (J\times S)_z\neq 0$ mit $\lambda\in\R$ als Eigenwert von $J_3$. Recherchiere dazu den Zusammenhang zur \href{https://en.wikipedia.org/wiki/Fine-structure_constant}{\emph{Feinstrukturkonstante}}.
