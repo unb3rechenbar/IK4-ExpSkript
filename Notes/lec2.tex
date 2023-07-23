@@ -5,7 +5,8 @@
     \marginnote{\textbf{\textit{VL 2}}\\13.04.2023, 08:15}
         Die experimentelle Bestimmung der Atommasse geklingt durch verschiedene Verfahren, wie beispielsweise die folgenden.
         
-        \paragraph*{Röntgenbeugung an Kristallen.} Man kennt zunächst die \emph{Gitterkonstante} $d\in\R_{\geq 0}$, also den \emph{Abstand der Atome innerhalb des Gitters}. Damit ist das Atomvolumen gerade $d^3=V_{\textit{Atom}}$ und schließlich
+        \paragraph*{Röntgenbeugung an Kristallen.}\label{Ub:Atomvolumen}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften]{\faBook}}
+        Man kennt zunächst die \emph{Gitterkonstante} $d\in\R_{\geq 0}$, also den \emph{Abstand der Atome innerhalb des Gitters}. Damit ist das Atomvolumen gerade $d^3=V_{\textit{Atom}}$ und schließlich
         \[
             N_A\cdot V_{\textit{Atom}}=\frac{M}{\rho(M)},
         \]
@@ -21,17 +22,17 @@
             \nr{} Recherchiere das genaue Vorgehen. 
         \end{Aufgabe}
 
-        \subsection{Größe von Atomen}
+        \subsection{Größe von Atomen}\label{Ub:Angstrom}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften]{\faBook}}
             Atome weisen etwa eine Größe von $10^{-10}\si\metre$ im Radius vor, was wir folgend auf die Einheit \emph{Angstrom} normieren werden: $1\si\angstrom:=10^{-10}\si\metre$. Zum Vergleich: Das Wasserstoffatom weist einen Radius von $0.5\si\angstrom$ auf, Magnesium einen von $1.6\si\angstrom$ und Caesium $2.98\si\angstrom$. 
 
         \subsection{Typische Bestimmung der Größe eines Atoms}
             \paragraph*{Grobe Abschätzung.} Für \emph{reale Gase} gilt die sogenannte \emph{Van-der-Waals-Gleichung} der Form
-            \[
-                \nbra{p+\frac{a}{V_m^2}}\cdot\nbra{V_m-b}=RT,
-            \]
+            \begin{align*}
+                \nbra{p+\frac{a}{V_m^2}}\cdot\nbra{V_m-b}=RT,\label{Ub:VanDerWaals}\tag{\star}
+            \end{align*}
             wobei $a$ den \emph{Binnendruck} und $b$ das \emph{Kovolumen} darstellen. Aus einem $pV$ Diagramm lässt sich dann die Konstante $b$ bestimmen und die Approximation $b\approx N_A\cdot V_A$ liefert die gewünschten Größen.
 
-            \paragraph*{Beugung von Röntgenstrahlen an Kristallen.}
+            \paragraph*{Beugung von Röntgenstrahlen an Kristallen.}\label{Ub:BeugungAmGitter}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften]{\faBook}}
             Das Ziel der Beugung ist zunächst die Bestimmung der oben erwähnten Gitterkonstanten $d$. Man benötigt hierzu Röntgenstrahlen, gewonnen durch (i) eine Röntgenröhre, mit dem Nachteil der charakteristischen Linien, welche berücksichtigt werden müssen, oder (ii) die Synchrotronstrahlung. Diese werden auf einen \emph{Einkristall} gelenkt, welcher durch eine \emph{periodische}, \emph{durchgehende äquidistante} Anordnung von Atomen als ein \emph{Festkörper} charakterisiert wird. Durch diese Anordnung wird eine Ebenenstruktur initialisiert, welche insbesondere nicht eindeutig wählbar ist. 
 
             Im Expmeriment wird dann eine Beugungserscheinung ersichtlich sein, siehe [$\to$ \emph{AP3: Beugung am Gitter}]. Im wesentlichen wird hierfür die \href{https://de.wikipedia.org/wiki/Bragg-Gleichung}{\emph{Bragg Bedinung}} der Form
@@ -40,7 +41,8 @@
 
             Man kann das Experiment auch mit mehreren Verfahren ausführen, wie zB. das \href{https://de.wikipedia.org/wiki/Laue-Verfahren}{\emph{Laue-Verfahren}}, das \href{https://de.wikipedia.org/wiki/Drehkristallmethode}{\emph{Bragg-} oder \emph{Drehkristallverfahren}} und \href{https://de.wikipedia.org/wiki/Debye-Scherrer-Verfahren}{\emph{Dabye Scherrer Verfahren}}, welches für Pulver und monochromatischem Licht verwendet. 
         
-            \paragraph*{Abbildende Größenbestimmung.} Mithilfe eines Lichtmikroskopes lässt sich ein Atom \emph{nicht} auflösen, da es der Abbeschen Theorie über das \href{https://de.wikipedia.org/wiki/Auflösung_(Mikroskopie)}{Auflösungsvermögen} widerspricht. Das \href{https://de.wikipedia.org/wiki/Rayleigh-Kriterium}{\emph{Rayleigh-Kriterium}} für $d$ ist von der Form
+            \paragraph*{Abbildende Größenbestimmung.}\label{Ub:AbbescheTheorie}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften]{\faBook}}
+            Mithilfe eines Lichtmikroskopes lässt sich ein Atom \emph{nicht} auflösen, da es der Abbeschen Theorie über das \href{https://de.wikipedia.org/wiki/Auflösung_(Mikroskopie)}{Auflösungsvermögen} widerspricht. Das \href{https://de.wikipedia.org/wiki/Rayleigh-Kriterium}{\emph{Rayleigh-Kriterium}} für $d$ ist von der Form
             \[d=\frac{\lambda}{n\cdot\sin(\alpha)},\]
             mit $n$ als Brechungsindex und $\alpha$ als Einfallswinkel (der halbe Winkel). Unter dem Link zum Auflösungsvermögen sind minimale sichtbare Längen bei ungefähr $500\si{\nano\metre}$ recherchierbar, woraus die Ausgangsaussage folgt. 
 
@@ -50,7 +52,7 @@
             \begin{Aufgabe}
                 \nr{} Finde heraus, was der Prof. mit dieser Aussage meinte. 
             \end{Aufgabe}
-            \begin{Experiment}{Die Nebelkammer}
+            \begin{Experiment}{Die Nebelkammer}\label{Ub:Nebelkammer}
                 Die sogenannte \href{https://de.wikipedia.org/wiki/Nebelkammer}{\emph{Nebelkammer}} ist gefüllt mit übersättigtem Wasserdampf, durch welche gewählte Teilchen hindurchfliegen, wie beispielsweise $_2^4\text{He}$ Kerne. Ihre Spuren in dem Nebel lassen sich dann optisch durch Schwärzungen nachvollziehen. Die Streifen entstehen durch die Reaktion
                 \[
                     _7^{14}\text{N}+_2^4\text{He}\longrightarrow _8^{17}\text{O}+_1^1p.
@@ -58,7 +60,7 @@
                 
             \end{Experiment}
             % \ce{_{7}^{14}N+_{2}^{4}He-> _{8}^{17}O+_{1}^{1}p}.
-            \begin{Experiment}{Das Feldemissionsmikroskop}
+            \begin{Experiment}{Das Feldemissionsmikroskop}\label{Ub:Feldemissionsmikroskop}
                 Das \href{https://de.wikipedia.org/wiki/Feldelektronenmikroskop}{\emph{Feldemissions-} oder \emph{Feldelektronenmikroskop}} wurde entwickelt von \emph{E. Müller} im Jahre 1951. Die Wolframspitze weist einen Krümmungsradius von $r\approx 10\si{\nano\metre}$ auf, aus wessen Spitze durch eine angelegte Spannung zwischen ihr und dem Schirm Elektronen herausgerissen werden. Diesen Prozess nennt man auch \href{https://de.wikipedia.org/wiki/Feldemission}{\emph{Kalte Elektronen Emission}}. 
             \end{Experiment}
             

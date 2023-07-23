@@ -1,0 +1,39 @@
+\documentclass{subfiles}
+\begin{document}
+    \subsection{Vorbereitung}
+        Wir nehmen an, daß wir die Lösung der Schrödingergleichung für ein bestimmtes Teilchen kennen, meistens das Wasserstoffatom. Wir kennen also $\psi_n\in\mcH$ mit $H\psi = E_n\cdot\psi_n$ zum Eigenwert $E_n$ und können eine orthonormale Eigenbasis $(\psi_i)_{i\in I}$ des Hilbertraums $\mcH$ daraus konstruieren. Es erfolgt nun ein \emph{Vorgriff} in Richtung der Störungstheorie, in welchem wir eine \emph{kleine} Störung $H_1$ des idealen Hamiltonoperators $H$ in einer Skalierung $\lambda\in\R$ betrachten. Wir nehmen unsren systembeschreibenden Hamiltonoperator also an in der Form
+        \[
+            H = H_0 + \lambda\cdot H_1.
+        \]
+        Dabei nehmen wir die Eigenvektoren $\psi_n$ und Eigenwerte $E_n$ als Potenzreihengrenzwerte der Form
+        \[
+            \psi_n = \sum_{k = 0}^\infty \lambda^k\cdot\psi_{n.k},\qquad \E_n = \sum_{k = 0}^\infty \lambda^k\cdot E_{n,k}
+        \] 
+        an. Wir erhalten damit eine angepasste Schrödingergleichung der Form
+        \[
+            H\Bbra{\sum_{k = 0}^\infty \lambda^k\cdot\psi_n^k} = E_n\cdot\Bbra{\sum_{k = 0}^\infty\lambda^k\cdot\psi_n^k}.
+        \]
+        Betrachten wir die Summenauswertungen, so erhalten wir num Koeffizienten $\lambda^0 = 1$ die originale ideale Eigenwertgleichung zu $H_0$. Für $\lambda^1$ erhalten wir die sogenannte \emph{Korrektur erster Ordnung} der Form
+        \[
+            H_0\psi_{n,1} + H_1\psi_{n,0} = E_{n,0}\cdot\psi_{n,1} + E_{n,1}\cdot\psi_{n,0}.
+        \]
+        Betrachten wir nun das Skalarprodukt auf $\mcH$ desselben Ausdruckes mit dem unkorrigierten Eigenvektor $\psi_{n,0}$, so erhalten wir
+        \[
+            \braopket{\psi_{n,0}}{H_0}{\psi_{n,1}} + \braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} = E_{n,0}\cdot\braket{\psi_{n,0}}{\psi_{n,1}} + E_{n,1}\cdot\braket{\psi_{n,0}}{\psi_{n,0}}.
+        \]
+        Nutzen wir nun die Zusammenhänge $\braopket{\psi_{n,0}}{H_0}{\psi_{n,1}} = E_{n,0}\cdot\braket{\psi_{n,0}}{\psi_{n,1}}$ und $\braket{\psi_{n,1}}{\psi_{n,0}} = 0$ bzw. $\braket{\psi_{n,0}}{\psi_{n,0}} = 1$, so erhalten wir die Korrektur erster Ordnung als
+        \[
+            E_{n,1} = \braopket{\psi_{n,0}}{H_1}{\psi_{n,0}},
+        \]
+        was wir speziell als \emph{Diagonaleinträge} einer Matrix in $\N^2\to\C$ auffassen können. 
+
+        Wir stellen also fest, daß die Korrektur der ersten Ordnung der Erwartungswert der Störung in ungestörten Zuständen ist. Der Eigenwert von $H$ entpuppt sich also als Summe des ungestörten Eigenwertes und der Korrektur erster Ordnung mit $E_n = E_{n,0} + E_{n,1}$.
+        \begin{Aufgabe}
+            \nr{} Schlage im Theoriekapitel zur nicht entarteten Störungstheorie alle zur Umformung nötigen Voraussetzungen nach, die wir hier implizit verwendet haben.
+        \end{Aufgabe}
+        Möchte man eine Aussage über die Übergangswahrscheinlichkeit zwischen einem durch $n\in\N$ charakterisierten Zustand zu einem durch $m\in\N$ charakterisierten, so wird die \emph{Übergangsrate} von $n$ nach $m$ durch
+        \[
+            \Gamma_{n\to m} = \frac{2\pi}{\hbar}\cdot\gamma(E_m - E_n)\cdot \abs{\braopket{\psi_m}{H_1}{\psi_n}}^2
+        \]
+        beschrieben, wobei $\gamma$ die \emph{Dichte der Endzustände} bezeichnet.
+\end{document}

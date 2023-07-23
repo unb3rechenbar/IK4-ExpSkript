@@ -1,0 +1,104 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textbf{\textit{VL 23}}\\19.07.2023, 08:15}
+
+        Für den effektiven Hamiltonoperator in diesem Problem können wir mithilfe der Spinoperatoren für die beiden Elektronen schreiben
+        \[
+            H^\textit{eff} = \ubra{\frac{1}{4}\cdot\bbra{E^S + 3\cdot E^T}}{\text{const.}} - \ubra{\bbra{E^S - E^T}\cdot\frac{1}{\hbar^2}\cdot \bbra{S_1\circ S_2}}{\text{Abhängig von Spin}}.
+        \]
+        Den zweiten Summanden kann man dabei noch umformen zu $-2\cdot J/\hbar^2\cdot (S_1\circ S_2)$, sodaß wir die Austausch-Wechselwirkung erneut ins Spiel bringen. Über dieses Integral können wir eine Klassifizierung durchführen:
+        \begin{itemize}[label=$\to$]
+            \item Ist $J > 0$, so folgt $E^S>E^T$ und $s = 1$ bzw. der Triplettzustand ist energetisch günstiger.
+            \item Ist $J < 0$, so folgt $E^S<E^T$ und $s = 0$ bzw. der Singulettzustand ist energetisch günstiger.
+        \end{itemize}
+        \begin{figure}
+            \centering
+            \begin{tikzpicture}
+                \draw[->] (0,0) -- (0,3);
+
+                \draw[] (0,0) -- (2,0);
+                \draw[] (2,0) -- (3,2.5);
+                \draw[] (3,2.5) -- (4,2.5);
+                \draw[] (2,0) -- (3,1.5);
+                \draw[] (3,1.5) -- (4,1.5);
+
+                \draw[] (4.1,0) -- (4.1,2);
+                \draw[] (4,0) -- (4.2,0); 
+                \draw[] (4,2) -- (4.2,2);
+                \draw[] (4.3,1.5) -- (4.3,2.5);
+                \draw[] (4.2,1.5) -- (4.4,1.5);
+                \draw[] (4.2,2.5) -- (4.4,2.5);
+
+                \node[] at (4.5,1) {$I$};
+                \node[] at (4.5,2.25) {$J$};
+                \node[] at (1,0.3) {$1s2s$};
+                
+                \node[] at (0,3.2) {$E$};
+            \end{tikzpicture}
+        \end{figure}
+
+    \subsection{Periodensystem} 
+        Die Verteilung von einer Anzahl $N$ Elektronen auf den möglichen Energieniveaus beschrieben durch $(n,l,m_l,m_s)$ erfolgen im Atom gerade so, daß das Pauli-Prinzip erfüllt ist und die Gesamtenergie der Elektronen minimal wird. 
+
+        Die gesamte zeitlich gemittelte Ladungsverteilung aller (maximal möglicher) $2\cdot n^2$ Elektronen mit gleicher Hauptquantenzahl $n$ ergibt sich durch die Summation über alle $l$ und $m_l$ Nebenquantenzahlen. Diese Ladungsverteilung ist dabei \emph{radialsymmetrisch} und wird durch die \emph{Radialverteilungsfunktion} $R_{n,l}(r)$ beschrieben. Die \emph{Radialverteilungsfunktion} ist dabei gegeben durch
+        \[
+            R_{n,l}(r) = \frac{1}{r^2}\cdot\abs{\psi_{n,l}(r)}^2.
+        \]
+        Sie hat optisch die Form einer Glockenkurve. Der Hauptanteil der Ladung befindet sich dabei im Bereich $r\pm \Delta r/2$ mit $\Delta r$ als \emph{Breite} der Glockenkurve. 
+
+        \subsubsection*{Schalennotation}\label{not:SchalenNot}
+            Spricht man von Schalen eines Atoms oder Elektronenkonfiguration, so bedarf es einer weiteren standardisierten Sprechweise. Für ein Zustandstupel $(n,l)$ notiert man dabei mit der schon in der \hyperref[not:SpektNot]{spektroskopischen Notation} verwendeten Buchstabenzuordnung der Form $B:0\mapsto S$, $1\masto P$, $2\mapsto D$ und $3\mapsto F$, bzw. alle nachfolgenden alphabetisch geordnet. Damit ergibt sich der Baustein
+            \[
+                (n,l,N)\mapsto n\mcB(l)^N,
+            \]
+            wobei $N$ die Elektronenanzahl in dem jeweiligen Orbital beschreibt. Diese unterscheiden sich dann lokal in den Zahlen $(m_l,m_s)$. Beispiele sind hier $1s^2$, $2s^2$ usw.. Da hier mehrere Tupel $(n,l)$ pro Hauptquantenzahl $n$ durch die Variation von $l$ möglich sind, werden hier neue Gruppen zusammengefasst durch die Obermengen $n\mapsto\{(n,l):l\in[n-1]\}$ beschränkt. Diese Mengen werden durch die Schalenbuchstaben $P$, $L$, $M$, $N$, $O$ usw. bezeichnet. 
+            \begin{Aufgabe}
+                \nr{} Notiere zur Übung die Elektronenkonfigurationen der Elemente $H$, $He$, $Li$, $Be$, und $B$.
+            \end{Aufgabe}
+
+        \subsubsection*{Auffüllen der Schalen}
+            Nach dem obigen Modell kann nun die Einsortierung gedanklich \enquote{dazukommender} Elektronen vollzogen werden.
+            \[
+                \ubra{\begin{matrix}
+                    [\,\,]&[\,\,]&[\,\,]&[\,\,] \\
+                    [\uparrow\,] & & & 
+                \end{matrix}}{\text{Wasserstoff}}\qquad\ubra{\begin{matrix}
+                    [\,\,]&[\,\,]&[\,\,]&[\,\,] \\
+                    [\uparrow\downarrow] & & &
+                \end{matrix}}{\text{Helium}}.
+            \]
+            Für die nächsten Elemente haben wir dann die Form 
+            \begin{align*}
+                \ubra{\begin{matrix}
+                    [\uparrow\,]&[\,\,]&[\,\,]&[\,\,] \\
+                    [\uparrow\downarrow] & & & 
+                \end{matrix}}{\text{Lithium}},\qquad \ubra{\begin{matrix}
+                    [\uparrow\downarrow]&[\,\,]&[\,\,]&[\,\,] \\
+                    [\uparrow\downarrow] & & &
+                \end{matrix}}{\text{Beryllium}},\qquad\ubra{\begin{matrix}
+                    [\uparrow\downarrow]&[\uparrow\,]&[\,\,]&[\,\,] \\
+                    [\uparrow\downarrow] & & &
+                \end{matrix}}{\text{Bohr}},\qquad \ubra{\begin{matrix}
+                    [\uparrow\downarrow]&[\uparrow\,]&[\uparrow\,]&[\,\,] \\
+                    [\uparrow\downarrow] & & &
+                \end{matrix}}{\text{Kohlenstoff}}.
+            \end{align*} 
+            Auffällig ist dabei die \enquote{parallele Orientierung} des Spins der Elektronen beim Kohlenstoffatom in der $P$ Unterschale. Dies bringt uns auf die \emph{Hundschen Regeln}:
+            \begin{itemize}[label=$\to$]
+                \item Im Grundzustand eines Atoms hat der Gesamtspin $\mcS$ den maximalen, mit dem Pauli Prinzip verträglichen Wert.
+                \item Für Terme mit maximalem $\mcS$ liegen die Zustände mit maximalem $\mcL$ am niedrigsten.
+                \item (a) Bei weniger als halbgefüllten Schalen bildet der Term mit $\mcH = \abs{\mcL - \mcS}$ den Grundzustand.
+                \item (b) Bei mehr als halbgefüllten Schalen bildet der Term mit $\mcH = \mcL + \mcS$ den Grundzustand.
+            \end{itemize} 
+            Als Begründung dieser Regeln führen wir Energieminimierungsargumente an, welche wir in diesem Rahmen jedoch nicht weiter ausführen wollen. 
+ 
+        \begin{Aufgabe}
+            \nr{} Berechne die möglichen Elektronenanzahlen auf den Schalen $K$, $L$, $M$ und $N$.
+
+            \nr{} Recherchiere zu der Begründungsstruktur der \href{https://de.wikipedia.org/wiki/Hundsche_Regeln}{Hundschen Regeln}.
+        \end{Aufgabe}
+
+    \subsection{Aufhebung der l Entartung bei Alkali Atomen}
+        Die Energieniveaus 
+\end{document}

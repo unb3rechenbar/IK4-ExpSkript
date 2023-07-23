@@ -1,8 +1,9 @@
 \documentclass{article}
 
 \begin{document}
+    \subsection{Der Photoeffekt}\label{subsec:Photoeffekt}
     \marginnote{\textbf{\textit{VL 8}}\\24.04.2023, 11:45}
-
+    
     \begin{Experiment}{Ladungsnachweis \href{https://de.wikipedia.org/wiki/Wimshurstmaschine}{Wimshurstmaschine} und \href{https://de.wikipedia.org/wiki/Fotoplatte}{Photoplatte}}
         Bestrahlen der Photoplatte mit und ohne Glasscheibe. Ohne Scheibe ist Ladungsabfall erkennbar, mit Scheibe nicht. Wir beobachten:
         \begin{itemize}
@@ -53,11 +54,11 @@
         wobei bei $(D)$ die \emph{Dispersionsrelation} [$\to$ IK3-E] verwendet wurde.
     \end{enumerate}
 
-    \begin{Aufgabe}
+    \begin{Aufgabe} 
         \nr{} Rechne noch einmal die Dispersionsrelation nach. Wie lautet das Argumentationsergebnis für ein Elektron $e$ der Masse $m_e$?
     \end{Aufgabe}
 
-    \subsubsection*{Der Compton Effekt}
+    \subsubsection*{Der Compton Effekt}\label{subsubsec:ComptonEffekt}
         Der \href{https://de.wikipedia.org/wiki/Compton-Effekt}{\emph{Compton Effekt}} diente dem Nachweis des Teilchencharakters von Photonen, wobei wiefolgt der Versuch aufgebaut wurde:
         \begin{figure}[H]
             \centering
@@ -82,17 +83,19 @@
             \caption{Compton Effekt aus \cite{ethz:ImpulsPhoton}.}
         \end{figure}
         Es zeigt dabei Abbildung \ref{subfig:ComptonKollision} die \emph{angenommene inelastische Kollision} eines Photons mit einem Elektron. Somit gelingt \emph{hier} der Brückenschlag aus der Quantenmechanik zur klassischen Mechanik des Zweierstoßes. Wir folgern mit Energieerhaltung
-        \[\hbar\cdot\omega(\nu) + m_ec_0^2 = \hbar\cdot\omega(\tilde\nu) + E_e,\]
+        \[\hbar\cdot\omega(\nu) + m_ec_0^2 = \hbar\cdot\omega(\tilde\nu) + E_e,\tag{$\star$}\]
         wobei die $\hbar$ Terme das Photon und $E_e$ das Elektron beschreiben. Mit Impulserhaltung folgt
-        \[p + 0_\Abb{\R}{\R^3} = \tilde p + p_e,\]
+		\[p + 0_{\Abb{\R}{\R^3}} = \tilde p + p_e,\tag{$\star$}\]
         sodaß $(1)^2 - (2)^2\cdot c_0^2$ den Zusammenhang
         \[\nsqbra{\hbar\cdot(\omega(\nu)-\omega(\tilde\nu)) + m_o\cdot c_0^2}^2 - (p-\tilde p)^2\cdot c_0^2 = E_e^2 - p_e^2\cdot c_0^2\]
-        liefert, wobei unter $E=m_02c^4+c_0^2p^2$ ($p^2 = \scpr{p}{p}_{\R^3}$) folgt
+        liefert, wobei unter $E=m_0^2c^4+c_0^2p^2$ mit $p^2 = \scpr{p}{p}_{\R^3}$ folgt
         \[-2\cdot\hbar^2\cdot\omega(\nu)\cdot\omega(\tilde\nu) + 2\cdot\hbar\cdot(\omega(\nu)-\omega(\tilde\nu))\cdot m_0c_0^2 + 2\hbar^2\cdot\omega(\nu)\cdot\omega(\tilde\nu)\cdot\cos(\phi(\nu)) = 0\]
-        für $\abs{\phi} = (\hbar\cdot\omega(\nu))/c_0$ und schlielich  
-        \[\omega(\tilde\nu) = \frac{\omega(\nu)}{\hbar\omega(\nu)/(m_0\cdot c_0^2)\cdot (1-\cos(\phi(\nu))) + 1}.\]
+        für $\abs{\phi} = (\hbar\cdot\omega(\nu))/c_0$ und schließlich  
+        \[\omega(\tilde\nu) = \frac{\omega(\nu)}{\hbar\omega(\nu)/(m_0\cdot c_0^2)\cdot (1-\cos(\phi(\nu))) + 1}.\tag{$\star$}\]
         Für die Wellenlänge $\lambda_e(\nu) = 2\pi\cdot e/\omega(\nu)$ gilt letztlich 
-        \[\Delta\lambda_e(\nu) = \frac{2\pi\cdot e}{\omega(\nu)\cdot\omega(\tilde\nu)}\cdot(\omega(\nu)-\omega(\tilde\nu)) =: \lambda_C\cdot (1-\cos(\phi(\nu))),\]
+        \begin{align*}
+            \Delta\lambda_e(\nu) = \frac{2\pi\cdot e}{\omega(\nu)\cdot\omega(\tilde\nu)}\cdot(\omega(\nu)-\omega(\tilde\nu)) =: \lambda_C\cdot (1-\cos(\phi(\nu))),\label{Ub:ComptonStreuung}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften.v]{\faBook}}\tag{$\star$}
+        \end{align*}
         wobei wir $\lambda_C:=h/(m_0\cdot c_0)\approx 2.4\cdot 10^{-12}\si\metre = 0.024\si\angstrom$ als \emph{Compton-Wellenlänge} definieren und die Gleichung $\lambda_e(\nu)$ als \emph{Compton-Streuung} bezeichnen. 
         
         \begin{Aufgabe}

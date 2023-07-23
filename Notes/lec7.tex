@@ -2,36 +2,54 @@
 
 \begin{document}
     \marginnote{\textbf{\textit{VL 7}}\\21.04.2023, 11:45}[-1cm]
-
-    Die induzierte Emission folgt dem Zusammenhang $dN_{I,21} = \lint{B_{21}\cdot u(\nu, t)\cdot N_2}{t}{}$. Im thermischen Gleichgewicht gilt
-    \[dN_{12} = dN_{E,21} + dN_{I,21},\]
-    also nach Definitionen 
-    \[\frac{N_2}{N_1} = \frac{B_{12}\cdot u(\nu,t)}{A_{21} + B_{21}\cdot u(\nu,t)} \Leftrightarrow \frac{N_2}{N_1} = \frac{\exo(E_2/(k_B\cdot T))}{\exp(E_1/(k_B\cdot T))},\]
+    \noindent Im thermischen Gleichgewicht gilt dann für die Atomanzahländerung
+    \[
+        dN_{1\to 2} = dN_{2\to 1}^\textit{spont} + dN_{2\to 1}^\textit{ind},\tag{\star}
+    \]
+    also nach Definitionen durch den Quotienten $1 = dN_{1\to 2}/(dN_{2\to 1}^\textit{spont} + dN_{2\to 1}^\textit{ind})$  unter Vergleich der Integranden 
+    \[
+        \frac{N_2}{N_1} = \frac{B_{1\to 2}\cdot u(\nu,t)}{A_{2\to 1} + B_{2\to 1}\cdot u(\nu,t)} :\iff \frac{N_2}{N_1} = \frac{\exo(E_2/(k_B\cdot T))}{\exp(E_1/(k_B\cdot T))},
+    \]
     bei welchen der Zähler und Nenner sogenannte \href{https://de.wikipedia.org/wiki/Boltzmann-Statistik}{\emph{Boltzmann-Faktoren}} sind. Mit $E_2-E_1 = h\cdot\nu$ folgt dann insgesamt 
-    \[u(\nu,t) = \frac{A_{21}}{B_{12}\cdot\exp(h\cdot\nu/(k_B\cdot T)) - B_{21}}.\]
+    \[
+        u(\nu,T) = \frac{A_{2\to 1}}{B_{1\to 2}\cdot\exp(h\cdot\nu/(k_B\cdot T)) - B_{2\to 1}}.
+    \]
+    Beachtet man nun das Verhalten des funktionellen Zusammenhangs in Änderung seiner Variablen, so erkennt man folgendes.
 
     \begin{itemize}
-        \item Für $T\to\infty$ muss $u\to\infty$ gelten, da sonst die Emission nicht mehr möglich wäre. Dies folgt aus der Definition von $u$. Weiter folgt mit \enquote{physikalischer Argumentation} $B_{12} = B_{21}$.
+        \item Für $T\to\infty$ muss $u\to\infty$ gelten, da sonst die Emission nicht mehr möglich wäre. Dies folgt aus der Definition von $u$. Weiter folgt mit \enquote{physikalischer Argumentation} $B_{1\to 2} = B_{2\to 1}$.
         \item Für $h\cdot\nu \ll k_B\cdot T$ (das R.J. Gesetz ist hier gut genug) folgt 
-        \[\exp(h\cdot\nu / (k_B\cdot T))\approx 1+\frac{h\cdot\nu}{k_B\cdot T}+\text{TAF}_{f,x_0}(x)\]
+        \[
+            \exp(h\cdot\nu / (k_B\cdot T))\approx 1+\frac{h\cdot\nu}{k_B\cdot T}+\text{TAF}_{f,x_0}(x)
+        \]
         mit passend gewählten $f,x_0,x$ durch Taylorapproximation. Daher gilt
-        \[u(\nu,T) = \frac{A_{21}}{B_{12}}\cdot\frac{k_B\cdot T}{h\cdot\nu}\]
-        mit $A_{21}/B_{12} = 8\pi h\cdot\nu^3/c_0^3$, sodaß 
-        \[u(\nu,T) = \frac{8\pi h\cdot\nu^3}{c_0^3} \cdot\frac{1}{\exp(h\cdot\nu /(k_B\cdot t)) - 1}.\]
-        Es ist dann $u(\nu,T) \cdot d\nu$ die spektrale Energiedichte im Frequenzbereich $d\nu$ pro Volumen. 
-        \item Betrachte die gesamte Energiedichte 
-        \[U(T) = \lint{u(\nu,T)}{\nu}{\R_{\geq 0}} = \frac{8\pi h}{c_0^3}\cdot\lint{\frac{\nu^3}{\exp(h\cdot\nu/(k_B\cdot T)) - 1}}{\nu}{\R_{\geq 0}}\]
-        und mit Substitution $x = h\nu / (k_B\cdot T)$ schließlich 
-        \[U(T) = \frac{8\pi h}{c_0^3} \cdot\nbra{\frac{k_B\cdot T}{h}}^4\cdot\lint{\frac{x^3}{\exp(x)-1}}{x}{\R_{\geq 0}} = \frac{8\cdot\pi^5 k_B^3}{15\cdot c_0^3\cdot h^3}\cdot T^4,\]
-        auch bekannt als das \emph{Stephan-Boltzmann-Gesetz}.
+        \[
+            u(\nu,T) = \frac{A_{2\to 1}}{B_{1\to 2}}\cdot\frac{k_B\cdot T}{h\cdot\nu}\implies\frac{A_{2\to 1}}{B_{1\to 2}} = \frac{8\pi h\cdot\nu^3}{c_0^3}.
+        \]
     \end{itemize}
+    Aus diesen beiden Bedingungen können wir nun die Einsteinkoeffizienten ersetzen und erhalten den funktionellen Energiedichtezusammenhang
+    \begin{align*}
+        u = \fdef{\frac{8\pi h\cdot\nu^3}{c_0^3} \cdot\frac{1}{\exp(h\cdot\nu /(k_B\cdot t)) - 1}}{(\nu,T)\in\R^2}.
+        \label{eq:PlanckEnergieDichte}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften.iv]{\faBook}}\tag{$\star$}
+    \end{align*}
+    Es ist dann $\int_V u(\nu,T)\, d\nu$ die spektrale Energiedichte im Frequenzbereich $V\subseteq\R_{>0}$. Für den Fall $V = \R_{>0}$ können wir zunächst schreiben 
+    \[
+        U(T) = \lint{u(\nu,T)}{\nu}{\R_{\geq 0}} = \frac{8\pi h}{c_0^3}\cdot\lint{\frac{\nu^3}{\exp(h\cdot\nu/(k_B\cdot T)) - 1}}{\nu}{\R_{\geq 0}}
+    \]
+    und mit Substitution $\Phi^{-1}(\nu) = h\nu / (k_B\cdot T)$ auf die exp Funktion getrimmt schließlich 
+    \begin{align*}
+        U(T) = \frac{8\pi h}{c_0^3} \cdot\nbra{\frac{k_B\cdot T}{h}}^4\cdot\lint{\frac{x^3}{\exp(x)-1}}{x}{\R_{\geq 0}} = \frac{8\cdot\pi^5 k_B^3}{15\cdot c_0^3\cdot h^3}\cdot T^4,\label{eq:StephanBoltzmann}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften.iv]{\faBook}}\tag{$\star$}
+    \end{align*}
+    auch bekannt als das \emph{Stephan-Boltzmann-Gesetz}.
     \begin{Aufgabe}
-        \nr{} Führe die angedeutete Substitution in $U$ in der Herleitung des Stephan-Boltzmann-Gesetzes durch und zeige, dass die Energie pro Volumen $U(T)$ proportional zu $T^4$ ist. Benenne den Faktor durch $\sigma_B$. 
+        \nr{} Führe die angedeutete Substitution in $U$ in der Herleitung des Stephan-Boltzmann-Gesetzes durch und zeige, dass die temperaturabhängig Energiedichte $U(T)$ proportional zu $T^4$ ist. Benenne den Faktor durch $\sigma_B$. 
         
         \nr{} Wechsle die Eingabe von $U$ von $T$ nach $\lambda$, indem du $U$ mit passendem $\Phi$ verkettest.
     \end{Aufgabe}
     Für das Maximum der Funktion $U$ muss zunächst $\kritPkt{U}$ durch die Gleichung $dU(\lambda)(h) = 0_\R$ bestimmt werden. Lösungen und damit Einträge von $\argmax{U}$ sind $x=(h\cdot c_0)/(k_B\cdot T\cdot\lambda)$ und $x = 5\cdot (1-\exp(x))$. Die numerische Lösung ist $x\approx 4.965114$. Umstellen liefert sodann 
-    \[T\cdot\lambda_\textit{max} = \frac{h\cdot c_0}{4.95114\cdot k_B}\approx 2.998\cdot 10^{-3}\si{\metre\kelvin}.\]
+    \begin{align*}
+        T\cdot\lambda_\textit{max} = \frac{h\cdot c_0}{4.95114\cdot k_B}\approx 2.998\cdot 10^{-3}\si{\metre\kelvin}.\label{eq:WienscheVerschiebungsgesetz}\marginnote{$\to$ \hyperref[Ub:AtomEigenschaften.iv]{\faBook}}\tag{$\star$}
+    \end{align*}
 
     \begin{Aufgabe}
         \nr{} Recherchiere das \emph{Wiensche-Verschiebungsgesetz}. Wie hängt es mit der skizzierten Maximumssuche zusammen?

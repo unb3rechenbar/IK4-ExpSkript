@@ -1,0 +1,39 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \marginnote{\textbf{\textit{VL 24}}\\21.07.2023, 11:45\\last one!}
+
+    Moleküle sind stabile Einheiten, welche aus mindestens zwei Atomen bestehen. Zwischen den Atomen herrscht dabei eine Bindungskraft, welche relativ zur Bindungskraft innerhalb eines Atomes jedoch vernachlässigbar ist. Die Struktur der Atome bleibt innerhalb eines Molekülverbundes also erhalten, die interatomare Bindung beeinflusst nur die Elektronen in äußeren Atomschalen, die sogenannten \emph{Valenzelektronen}. Für die chemischen Effekte und Reaktionen ist diese Eigenschaft von immenser Bedeutung. 
+
+    \subsection{Das ein Elektron zwei Proton System}
+        Für ein Elektron im Coulombpotential zweier Protonen können wir das gemeinsame Potential Durch
+        \[
+            E_\textit{pot} = -\frac{e^2}{4\pi\epsilon_0}\cdot\Bbra{\frac{1}{\dabs{r_1}{}} + \frac{1}{\dabs{r_2}{}} - \frac{1}{\dabs{R}{}}},
+        \]
+        wobei wir $r_i$ als Differenzvektor vom Kernmittelpunkt des $i$ ten Protons zum Elektron und $R$ als Differenzvektor der beiden Protonenkerne definieren. 
+
+        Dies führt uns auf die zeitunabhängige Schrödingergleichung
+        \[
+            \Bbra{-H_{A,E_\textit{pot}} - H_{B,E_\textit{pot}} - H_{e,E_\textit{pot}}}(\psi) = E\cdot\psi,
+        \]
+        wobei $H_{A,E_\textit{pot}}$ und $H_{B,E_\textit{pot}}$ die Hamiltonoperatoren der Protonen und $H_{e,E_\textit{pot}}$ der des Elektrons ist. Betrachten wir nur $H_{e,E_\textit{pot}}(\psi) = E\cdot\psi$ für einen Molekülzustand $\psi$, so können wir das erhaltene System nicht analytisch lösen. Hier müssen wir auf Näherungsmethoden wie die \emph{Born-Oppenheimer-Näherung} oder die \emph{LCAO-Methode} (\underline{L}inear \underline{C}ombination of \underline{A}tomic \underline{O}rbitals) zurückgreifen. Bei letzteren Methode versuchen wir, die molekulare Zustandsfunktion $\psi$ als Linearkombination von Atomzustandsfunktionen $\psi_i$ zu schreiben. Wir stellen hier unser konkretes Beispielsystem $H_2^+$ durch eine Kombination des Wasserstoffatomes $H$ und des Wasserstoffionen $H^+$ dar, wobei sich $H$ im Grundzustand $1s$ befinden soll. Damit ist für die erste Atomzustandsfunktion 
+        \[
+            \varphi_1(x) = \frac{1}{\sqrt{\pi\cdot a_0^3}}\cdot \exp(\frac{-\dabs{x}{}^2}{a_0}),
+        \]
+        wobei $a_0$ die \emph{Bohrsche Länge} ist. Für die zweite Atomzustandsfunktion $\varphi_2$ fordern wir, daß diese orthogonal zu $\varphi_1$ ist. Damit erhalten wir
+        \[
+            \psi(x) = c_1\cdot\varphi_1(x) + c_2\cdot\varphi_2(x).
+        \]
+        Für die Normierbarkeit fordern wir weiter, daß $\dabs{\psi}{} = \abs{c_1}\cdot\dabs{\varphi_1}{} + \abs{c_2}\cdot\dabs{\varphi_2}{} = 1$ gilt. 
+        \begin{Aufgabe}
+            \nr{} Berechne $\dabs{\psi}{}^2$ und isoliere das \emph{Überlappintegral} $\int \varphi_1\cdot\varphi_2\uplambda$. 
+        \end{Aufgabe}
+        Ist $S_{1,2}$ das in der Aufgabe bestimmte Überlappintegral, so erhalten wir 
+
+        \begin{align*}
+            H_{1,1} = \int\varphi_1^*\cdot H(\varphi_1)\;\uplambda,\qquad H_{1,2} = \int\varphi_1^*\cdot H(\varphi_2)\;\uplambda.
+        \end{align*}
+        \begin{Aufgabe}
+            \nr{} Betrachte in den Vorlesungsfolien die eingebundene Graphik zur Linearkombination von $\varphi_1$ und $\varphi_2$. 
+        \end{Aufgabe}
+\end{document}

@@ -2,6 +2,100 @@
 
 \begin{document}
     \marginnote{\textit{\textbf{VL 12}\\@home}\\31.05.2023, 08:15}
-    \subsection{Wechselwirkung mit dem Strahlungsfeld}
+    \subsection{Schrödingergleichung im elektromagnetischen Feld}
+        Im elektromagnetischen Feld nehmen wir den Hamiltonoperator in der Form
+        \[
+            H = \fdef{
+                \frac{1}{2\cdot m_e}\cdot\Bbra{
+                    P(x) + e\cdot A_t(Q)(x)
+                }^2 - e\cdot\varphi_t(Q)(x) + V(Q)(x)
+            }{x\in\mcH}
+        \]
+        für ein Vektorpotential $A:\R\to(\R^3\to\R^3)$ und ein Skalarpotential $\varphi:\R^3\to\R$, sowie ein Potantial $V:\R^3\to\R$ an. 
+
+        Der Zusammenhang zu den elektrischen und magnetischen Feldern ist dabei gegeben durch
+        \[
+            B_t(r) = \rot A_t(r)\qquad E_t(r) = -\dv{t}A_t(r) - d\varphi_t(r)(1).
+        \]
+        \begin{Aufgabe}
+            \nr{} Zeige, daß die felddefinierenden Potentiale $A$ und $\varphi$ eindeutig oder nicht eindeutig definiert sind. 
+        \end{Aufgabe}
+        Für unser Potential $A$ fordern wir die \emph{Coulomb Eichung} $dA_t(r)(h) = 0$ für beliebige $h\in\R^3$. Für die zeitabhängige Schrödingergleichung $\cmath\hbar\dv{t}\psi(t) = H(\psi(t))$ finden wir nun für ein $\psi:\R\to H^2(\R)$ die Differentialgleichung
+        \begin{align*}
+            \cmath\cdot\hbar\cdot d{\psi(t)} &= -\frac{\hbar^2}{2\cdot m_e}\cdot d^2(\psi(t)) - \frac{\cmath\cdot e\cdot\hbar}{2\cdot m_e}\cdot A_t\cdot d\psi(t) - \frac{\cmath\cdot e\cdot\hbar}{2\cdot m_e}\cdot d(A_t)\cdot\psi(t) \\
+            &\qquad + \frac{e^2}{2\cdot m_e}\cdot \scpr{A_t}{A_t}\cdot\psi(t) - e\cdot\psi(t)\cdot\varphi_t + V\cdot\psi(t)
+        \end{align*}
+        für ein beliebiges $x\in\R$ in eine Richtung $h\in\R$. Wir wählen hier bei meistens wie in der Physik üblich $h = 1$. 
+        \begin{Aufgabe}
+            \nr{} Betrachte einmal genau die Dimensionen der einzelnen Summanden und bewerte, inwiefern der Ausdruck sinnvoll bzw. missverständlich ist und ob er sogar korrigiert werden muss.
+        \end{Aufgabe}
+        \indent Die Coulomb Eichung liefert uns dann die verkürzte Form
+        \begin{align*}
+            \cmath\cdot\hbar\cdot d{\psi(t)} &= -\frac{\hbar^2}{2\cdot m_e}\cdot d^2(\psi(t)) - \frac{\cmath\cdot e\cdot\hbar}{2\cdot m_e}\cdot A_t\cdot d\psi(t) \\
+            &\qquad+ \frac{e^2}{2\cdot m_e}\cdot\scpr{A_t}{A_t}\cdot\psi(t) - e\cdot\varphi_t\cdot\psi(t) + V\cdot\psi(t).
+        \end{align*}
+
+    
+    \subsection{Semiklassische Wechselwirkung mit dem Strahlungsfeld}
+        In der semiklassischen Betrachtung nehmen wir das elektromagnetische Feld als \emph{nicht quantisiert} an, sodaß wir einen Rotator $A$ wählen können. Weiter nehmen wir an, daß $A^2$ vernachlässigbar klein ist und das Feld \emph{quellenfrei} ist, also $\varphi_t(x) = 0$ für alle $t,x\in\R$. Die elektromagnetische Welle ist im physikalischen Anschauungssinne also weit von ihrer Quelle entfernt. Der Störoperator $H_1$ hat demnach dann die Form 
+        \[
+            H_1 = \fdef{-\frac{\cmath\cdot e\cdot\hbar}{m_e}\cdot A_t(Q)(x)\cdot P(x)}{x\in\mcH}.
+        \]
+        Stellen wir $A_t$ in Form komplex rotierender Summanden dar, so finden wir
+        \[
+            A_t(x) = A_0\cdot\exp(\cmath\cdot \bbra{\scpr{k}{x} - \omega\cdot t}) + \conj(A_0)\cdot\exp(-\cmath\cdot\bbra{\scpr{k}{x} - \omega\cdot t}),
+        \]
+        wobei wir $A_0\in\C^3$ als \emph{Amplitude} und $k\in\R^3$ als \emph{Wellenvektor} bezeichnen. Wir nehmen ferner an $\omega = c_0\cdot\dabs{k}{2}$, die Orthogonalität von $k$ und $A_0$ und die Zerlegung von $A_0$ in $a_0\cdot e_r$ mit $e_r\in\R^3$ als Richtungsvektor der Amplitude, also Polarisationsvektor der Welle. Damit ist der Hamiltonoperator oben gegeben als
+        \[
+            H(\psi) = -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_ß\cdot\exp(\cmath\cdot\sckr{k}{r})\cdot e_r\cdot d\exp(-\cmath\cdot\omega\cdot t) + \dots,
+        \] 
+        sodaß der Term $\exp(-\cmath\cdot\omega\cdot t)$ eine \emph{zeitliche Störung} darstellt. 
+        \begin{Aufgabe}
+            \nr{} Rechne die Punkte \dots in der Gleichung aus. 
+
+            \nr{} Ist die periodische Störung schon in $\Gamma_{a\to b}$ enthalten?
+        \end{Aufgabe}
+        \noindent Wir stellen eine Proportionalität zwischen $\Gamma_{\to b}$ und dem Skalarprodukt $\abs{\braopket{\psi_{m,0}}{H_1}{\psi_{n,0}}}$ fest. Wir können zunächst ausformulieren 
+        \[
+            -\braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} = -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_0\cdot\scpr{\psi_{n,0}}{\exp(\cmath\cdot\scpr{k}{r})\cdot e_r\cdot d\psi_{n,0}},
+        \]
+        wobei wir nun den exponentiellen Ausdruck mittels $C^\infty$ Analytizität in einer Potenzreihe zu 
+        \[
+            \exp(\cmath\cdot\scpr{k}{r}) = 1 + \cmath\cdot\scpr{k}{r} + \frac{(\cmath\cdot\scpr{k}{r})^2}{2} + \dots
+        \]
+        ausschreiben können. In der sogenannten \emph{Dipolnäherung} vernachlässigen wir alle Terme höherer Ordnung und erhalten die Abschätzung $\exp(\cmath\cdot\scpr{k}{r})\approx 1$. Wenn jedoch die Übergangsrate $\Gamma_{n\to m}$ gegen Null verschwindet, so müssen höhere Terme der Reihe berücksichtigt werden. Hier klassifizieren wir drei Übergangstypen.
+        \begin{itemize}[label=$\to$]
+            \item \emph{Erlaubte Übergänge (Dipolnäherung)}: Für nicht verschwindendes $\Gamma_{n\to m}$ gilt die Näherung über den ersten Summanden der Potenzreihe.
+            \item \emph{Verbotene Übergänge}: Für kleine $\Gamma_{n\to m}$ müssen höhere Summanden der Potenzreihe berücksichtigt werden.
+            \item \emph{Streng verbotene Übergänge}: Für $\Gamma_{n\to m} \to 0$ kann keine Näherung mehr vorgenommen werden. 
+        \end{itemize}
+        Für den ersten Fall der Dipolnäherung können wir weiter schreiben
+        \[
+            -\braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} \approx -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_0\cdot\scpr{\psi_{n,0}}{e_r\cdot d\psi_{n,0}} = \frac{e}{m_e}\cdot\scpr{\psi_{n,0}}{e_r\cdot P(\psi_{n,0})}.
+        \]
+        Mit einem Kommutatortrick können wir den Ausdruck weiter umschreiben und den idealen Hamiltonoperator $H_0$ ins Spiel bringen:
+        \begin{align*}
+            [Q,P^2] &= P\circ[Q,P] + [Q,P]\circ P = 2\cdot\cmath\cdot\hbar\cdot P, \\
+            [Q,H_0] &= \frac{1}{2\cdot m_e}\cdot [Q,P^2] + [Q,V(Q)] = \frac{\cmath\cdot\hbar}{m_e}\cdot P.
+        \end{align*}
+        Damit können wir den Impulsoperator $P$ in der Form $P = m_e\cdot[Q,H_0]/(\cmath\cdot\hbar)$ ausdrücken. Bringen wir dies ein in die Dipolnäherung, so ergibt sich
+        \begin{align*}
+            -\braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} &\approx \frac{e}{\hbar}\cdot a_0\cdot\braopket{\psi_{n,0}}{e_r\cdot (Q\circ H_0 - H_0\circ Q)}{\psi_{m,0}} \\ 
+            &= \frac{e}{\hbar}\cdot a_0\cdot\braopket{\psi_{n,0}}{e_r\cdot Q\circ H_0}{\psi_{m,0}} - \frac{e}{\hbar}\cdot a_0\cdot\braopket{\psi_{n,0}}{H_0\circ e_r\cdot Q}{\psi_{m,0}}.
+        \end{align*}
+        Verwenden wir nun die Eigenwerte $E_{n,0}$ zu $\psi_{n,0}$ bzw. $E_{m,0}$ zu $\psi_{m,0}$, so erhalten wir mit $\omega_{n,m}:=E_{n,0} - E_{m,0}$ den Zusammenhang
+        \[
+            -\braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} \approx -e\cdot a_0\cdot\omega_{n,m}\cdot\braopket{\psi_{n,0}}{e_r\cdot Q}{\psi_{m,0}}.
+        \]
+        Damit können wir dann schließlich die Proportionalität der Übergangsrate $\Gamma_{n\to m}$ für die Dipolnäherung beschreiben durch
+        \[
+            \Gamma_{n\to m}^\textit{dipol} \propto e^2\cdot a_0^2\cdot\omega_{n,m}^2\cdot\abs{\braopket{\psi_{n,0}}{e_r\cdot Q}{\psi_{m,0}}}^2.
+        \]
         
+        \begin{Aufgabe}
+            \nr{} Zeige die Konvergenz der behaupteten Reihenentwicklung. 
+
+            \nr{} Überlege dir, wo hier Indizes vertauscht sein könnten. 
+        \end{Aufgabe}
+
 \end{document}

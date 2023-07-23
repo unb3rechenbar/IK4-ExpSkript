@@ -1,0 +1,90 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \subsection{Überblick: Atomeigenschaften}\label{Ub:AtomEigenschaften}
+    In diesem Kapitel haben wir uns mit den grundlegenden Entdeckungen und Eigenschaften von Atomen beschäftigt. Wir haben zuerst Abschätzungen zum \hyperref[Ub:Atomvolumen]{\emph{Atomvolumen}} über die \emph{Gitterkonstante} $d$ durch 
+    \[
+        N\cdot V_{\textit{Atom}}=\frac{M}{\rho(M)},\quad V_{\textit{Atom}}=d^3
+    \]
+    mithilfe zunächst weniger klaren Begriffen $M$ Molekülmasse und $\rho$ Dichtefunktion getroffen.
+
+    Im Zusammenhang dazu haben wir die Einheit \hyperref[Ub:Angstrom]{\emph{Angstrom}} auf den approximierten Atomradius von $10^{-10}\si\metre$ eingeführt welche durch verschiedene Techniken bestimmt werden kann. Kennengelernt haben wir dabei die Methode nach \hyperref[Ub:VanDerWaals]{\emph{Van der Waals}}, bei welcher eine Modellberechnung mit \emph{Binnendruck} und \emph{Kovolumen} das Ergebnis bestimmen, oder die eher experimentelle Methode der \hyperref[Ub:BeugungAmGitter]{Beugung am Gitter}, bei welcher der \emph{Bragg Zusammenhang} mithilfe eines gemessenen Kontaktwinkels $\alpha\in\R_{>0}$ die benötigte Gitterkonstante $d$ lieferte. Die nicht Eindeutigkeit desselben Radius mussten wir bei unseren Bemühungen jedoch ebenfalls schnell einsehen. In radialer Richtung konnten wir das \hyperref[Ub:DefAtomRadius]{\emph{Lennard-Jones-Potential}} als Modellpotential etablieren und uns so einen kleinen ersten Blick in die Atomstruktur gewähren:
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}
+            \draw[->] (0,0) -- (0,1.5) node [above] {$V$};
+            \draw[->] (0,0) -- (3,0) node [right] {$r$};
+
+            \draw[domain=0.86:2.5, samples=100, smooth] plot (\x,{1/(\x)^12 - 2/(\x)^6});
+
+            \draw[red, domain=0.96:2.5, samples=100, smooth] plot (\x,{1/(\x)^12});
+            \draw[red, domain=1.07:2.5, samples=100, smooth] plot (\x,{-2/(\x)^6});
+        \end{tikzpicture}
+    \end{figure}
+
+    Daß ein Atom nicht abbildbar ist, haben wir mithilfe der \hyperref[Ub:AbbescheTheorie]{\emph{Abbeschen Theorie}} berechnen und eine Abschätzung zur maximalen Auflösung eines Lichtmikroskopes abgeben können.
+
+    Die Atominteraktion konnten wir experimentell durch die \hyperref[Ub:Nebelkammer]{\emph{Nebelkammer}} beobachten, welche durch Ablauf der Reaktion $_7^{14}\text{N}+_2^4\text{He}\longrightarrow _8^{17}\text{O}+_1^1p.$ die Spuren der Teilchen sichtbar machte. Atome selbst konnten wir durch einen Trick selbst erahnbar machen: das \hyperref[Ub:Feldemissionsmikroskop]{\emph{Feldemissionsmikroskop}}. Als weitere Beispiele haben wir auch das \hyperref[Ub:Transmissionselektronenmikroskop]{\emph{Transmissionselektronenmikroskop}} und das \hyperref[Ub:Rasterelektronenmikroskop]{\emph{Rasterelektronenmikroskop}} kennengelernt. 
+
+    \subsubsection*{Elektrische Einblicke und Elektron}\label{Ub:AtomEigenschaften.ii}
+        Mittels \hyperref[Ub:Kathodenstrahl]{Kathodenstrahlröhre} oder auch Thomson Spektograph haben wir eine Möglichkeit zur Bestimmung des Quotienten aus Elektronenladung und Masse kennengelernt. Elektrisch- mechanische Betrachtungsansätze lieferten uns schließlich den Zusammenhang
+        \[
+            \frac{e}{m} = \frac{E}{B^2\cdot l\cdot \bbra{l/2 + s}}\cdot\frac{x_0^2}{y_0},
+        \]
+        wobei $l$ die Kondensatorlänge und $s$ die nachfolgend feldfreie Strecke zum Schirm darstellt. Da in diesem Modell die Elektronenladung als bekannt vorausgesetzt wird, bestimmten wir experimentell ihren Wert mithilfe des \hyperref[Ub:Millikan]{Millikan-Versuchs}. Beachtung der Schwer-, Reibungs- und Auftriebskraft durch $F_R = F_G - F_A$ lieferte uns unter Annahme der Kugelform die Radius- und Massenbeziehung
+        \[
+            r = \nbra{\frac{9\cdot\eta\cdot v}{2\cdot g\cdot (\rho_\textit{Öl} - \rho_\textit{Luft})}}^{\frac{1}{2}}\implies m=\frac{4}{3}\pi r^3\cdot \rho_\textit{Öl}.
+        \]
+        Durch Schweben des Teilchens in einem Magnetfeld ändert sich die Kraftbeziehung zu $F_E = F_G - F_A$ und durch Justage des elektrischen Feldes $E = U/d$ folgt die Elektronenladung
+        \[
+            n\cdot q = \frac{\frac{4}{3}\pi r^3\cdot g\cdot \nbra{\rho_\textit{Öl} - \rho_\textit{Luft}}}{E}.
+        \]
+        Weitere Eigenschaften des Elektrons wie der \hyperref[sec:Spin]{Spin}, \hyperref[subsec:PauliPrinzip]{Pauli-Prinzip} und \hyperref[sec:WWmeFeldern]{magnetisches Moment} deuteten sich durch einen \hyperref[Ub:WeitEigElektron]{Vorgriff} an.
+
+    \subsubsection*{Atomladungsverteilungen}\label{Ub:AtomEigenschaften.iii}
+        Fragten wir uns nach der Verteilung der Ladungen im Atom, so konnten wir durch das \hyperref[Ub:ThomsonAtom]{Thomson'sche Atommodell} eine erste Abschätzung treffen. Dabei starteten wir mit der Grundidee des \emph{elektrisch neutralen Atoms}, dessen $z\cdot (-e)$ negative Elektronenladungen durch $z\cdot\abs{e}$ positive Ladungen kompensiert werden. Dabei nahmen wir die Ladungsdichte $\rho$ als konstant über das gesamte Atomvolumen an. Das \hyperref[Ub:RutherfordExp]{Rutherford-Experiment} widersprach der letzten Annahme jedoch direkt durch seine Streuphänomene, sodaß wir die Evolution zum \hyperref[Ub:RutherfordModell]{Rutherford'schen Atommodell} beschreiten mussten. Mathematisch ließen sich die Streuzusammenhänge an der Goldfolie durch die \hyperref[Ub:RutherfordStreuformel]{\emph{Rutherford-Streuformel}} beschreiben: Wir begannen bei der Betrachtung der \hyperref[Ub:CoulombKraftRutherford]{Coulombkraft} auf ein anfliegendes $\alpha$ Teilchen Richtung des Kerns $Z\cdot\abs{e}$. Mithilfe einer Kraftaufspaltung und der Drehimpulsbetrachtung in Zylinderkoordinaten fanden wir einen \hyperref[Ub:OrthKraftRutherford]{orthogonalen Kraftausdruck} $F_\perp(t)$, welchen wir über den Zeitparameter $t$ durch $\int F_\perp(t)\, dt$ integrierten. Wir erhielten somit einen \hyperref[Ub:StreuungBahnabstand]{ersten Zusammenhang} für $b(\Theta)$ als Abstand des Teilchens zur Kernachse:
+        \[
+            b(\Theta) = \frac{2\cdot Z\cdot e^2}{4\pi\epsilon_0\cdot m\cdot v_0^2}\cdot\cot(\frac{\Theta}{2}).
+        \]
+        Da wir diesen Parameter experimentell jedoch nicht messen konnten, mussten wir eine Beschreibung über die Anzahl gemessener Teilchen $dN$ pro Raumwinkel $d\Omega$ bestimmen; Über eine \hyperref[Ub:dNRutherford]{Plausibilitätsüberlegung} und die Infinitesimalflächenbeschreibung $dB = b\cdot (\dd b)\cdot \dd\varphi$ bzw. $\dd\Omega = \sin(\Theta)\cdot\dd\Theta\cdot\dd\varphi$ erhielten wir den finalen differentiellen Streuungsquerschnitt
+        \[
+            \frac{\dd b}{\dd\Omega} = \frac{1}{(4\pi\epsilon_0)^2}\cdot\frac{Z^2\cdot e^4}{m^2\cdot v_0^4}\cdot\frac{1}{\sin(\Theta/2)^4}.
+        \]
+        Diese Formel lieferte uns für \emph{langsame} $\alpha$ Teilchen eine Approximation, welche jedoch durch den Geltungsbereich der Coulombkraft und dessen Übergang in die \hyperref[Ub:starkeKernkraft]{starke Kernkraft} entscheidend beschränkt ist.
+
+    \subsubsection*{Entwicklung und Notwendigkeit der Quantenmechanik}\label{Ub:AtomEigenschaften.iv}
+        Im selben Zeitraum der Entdeckung erhielten \hyperref[Ub:EntwicklungQM]{viele weitere experimentelle Widersprüche} zur klassischen Anschauung Aufmerksamkeit, sodaß eine Modellerweiterung und Neukonstruktion notwendig wurde. Wichtige Namen waren hier das \hyperref[Ub:Doppelspaltexperiment]{Doppelspaltexperiment}, die \hyperref[sec:Schwarzkoerperstrahlung]{Schwarzkörperstrahlung}, die \hyperref[Ub:SpektralAufspaltung]{Spektrallinien}, der \hyperref[subsec:Photoeffekt]{Photoeffekt} und die \hyperref[subsubsec:ComptonEffekt]{Compton-Streuung}. Dabei charakterisierten wir den Schwarzen Körper als idealisierte Materie mit der totalen Absorbtionseigenschaft $A = 1$ und $R = 0$, also \emph{maximalem Emissionsvermögen}. Die Energieabgabe erfolgt hier dann in Abhängigkeit der Materientemperatur $T$, was uns auf die \hyperref[Ub:PlanckschesStrahlungsgesetz]{Plancksche Strahlungsformel} führte. Hierzu stellten wir uns als Analogon des Schwarzkörpers eine \emph{Hohlkugel} vor: Das \hyperref[eq:RayleighJeans]{Rayleigh-Jeans Gesetz} brachte uns für kleine Wellenlängen eine gute klassische Approximation der Spektralbeobachtung einer solchen Hohlkugel. Mithilfe der \emph{Emissions-} und \emph{Absorbtionsbetrachtung} eines Atoms mit zwei möglichen Energiezuständen erhielten wir durch die Kombination von \emph{spontan}, \emph{induziert} und \emph{absorbiert} die Atomzahländerung
+        \[
+            dN_{1\to 2} = dN_{2\to 1}^\textit{spont} + dN_{2\to 1}^\textit{ind}.
+        \]
+        Der Quotientenvergleich $1 = dN_{1\to 2}/(dN_{2\to 1}^\textit{spont} + dN_{2\to 1}^\textit{ind})$ unter Verwendung der Boltzmannfaktoren $\exp(-E/(k_B\cdot T))$ brachte uns dann auf die \hyperref[eq:PlanckEnergieDichte]{Energiedichte} 
+        \[
+            u(\nu,t) = \frac{A_{2\to 1}}{B_{1\to 2}\cdot\exp(h\cdot\nu/(k_B\cdot T)) - B_{2\to 1}}.
+        \]
+        Funktionelle Betrachtungen unter physikalischer Plausibilitätsüberlegung lieferte uns schließlich für die noch ausstehenden Unbekannten die Bedingungen $B_{1\to 2} = B_{2\to 1}$ und $A_{2\to 1}/B_{1\to 2} = 8\pi h\nu^3/c_0^3$ unter Taylorapproximation, sodaß wir das \hyperref[eq:PlanckEnergieDichte]{Plancksche Strahlungsgesetz} ernteten:
+        \[
+            u(\nu,T) = \frac{8\pi h\nu^3}{c_0^3}\cdot\frac{1}{\exp(h\nu/(k_B\cdot T)) - 1}.
+        \]
+        Unter Integration $\int_{\R_{>0}} u(\nu,T)\dd\nu$ und Substitution $\Phi^{-1}(\nu) = h\nu/(k_B\cdot T)$ erhielten wir schließlich das \hyperref[eq:StephanBoltzmann]{Stephan-Boltzmann Gesetz}:
+        \[
+            U(T) = \frac{8\pi^5 k_B^3}{15\cdot c_0^3\cdot h^3}\cdot T^4.
+        \] 
+        Anschaulich erhielten wir hierdurch eine temperaturabhängige Energiedichte $U(T)$, welche insbesondere die Proportionalität zu $T^4$ aufwies. Fragten wir nach dem Maximum dieser Funktion $U$, so erhielten wir mithilfe numerischer Approximation das \hyperref[eq:WienscheVerschiebungsgesetz]{Wiensche Verschiebungsgesetz} $T\cdot\lambda_\textit{max} = \textit{const}.$
+
+    \subsubsection*{Das Photon}\label{Ub:AtomEigenschaften.v}
+		Ein weiterer Baustein der Quantenmechanik war die Entdeckung der Quantisierung von Licht durch Photonen und den \hyperref[subsec:Photoeffekt]{photoelektrischen Effekt}. Er diente uns im Rahmen der \hyperref[Ub:Wimshurstmaschine]{Wimshurstmaschine} als direkter Nachweis von quantisiertem Licht durch den Proportionalitätsgraphen $U\cdot e \propto h$. Es führte zu der Einsteinschen \hyperref[Ub:Lichtquantenhypothese]{Lichtquantenhypothese}. 
+
+		Die fortfahrende Untersuchung der postulierten Lichtteilchen erfolgte mittels \hyperref[subsubsec:ComptonEffekt]{Compton Effekt}. Durch Energie- und Impulserhaltung kommt ein Zusammenhang zwischen klassischer Mechanik und neuer Quantenmechanik zustande:
+		\begin{align*}
+			\hbar\cdot\omega(\nu) + m_0\cdot c_0^2 &= \hbar\cdot\omega(\tilde\nu) + E_e \\
+			p + 0 &= \tilde p + p_e
+		\end{align*}
+		Der Ausdruck $\omega(\tilde\nu)$ entsteht nun durch Termumformung der beiden Gleichungen, wobei relativistische Energieaufteilung zur Verwendung kommt. Die resultierende \hyperref[Ub:ComptonStreuung]{Compton Streuung} erhält daher den Zusammenhang
+		\[
+			\Delta\lambda_e = \frac{2\pi\cdot e}{\omega(\nu)\cdot\omega(\tilde\nu)}\cdot \bigl(\omega(\nu) - \omega(\tilde\nu)\bigr),
+		\]
+		wobei wir den Vorfaktor als \emph{Compton Wellenlänge} betitelten. 
+
+
+
+\end{document}
