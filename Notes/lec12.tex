@@ -1,8 +1,8 @@
 \documentclass{subfile}
 
 \begin{document}
-    \marginnote{\textit{\textbf{VL 12}\\@home}\\31.05.2023, 08:15}
     \subsection{Schrödingergleichung im elektromagnetischen Feld}
+    \marginnote{\textit{\textbf{VL 12}\\@home}\\31.05.2023, 08:15}
         Im elektromagnetischen Feld nehmen wir den Hamiltonoperator in der Form
         \[
             H = \fdef{
@@ -47,7 +47,7 @@
         \]
         wobei wir $A_0\in\C^3$ als \emph{Amplitude} und $k\in\R^3$ als \emph{Wellenvektor} bezeichnen. Wir nehmen ferner an $\omega = c_0\cdot\dabs{k}{2}$, die Orthogonalität von $k$ und $A_0$ und die Zerlegung von $A_0$ in $a_0\cdot e_r$ mit $e_r\in\R^3$ als Richtungsvektor der Amplitude, also Polarisationsvektor der Welle. Damit ist der Hamiltonoperator oben gegeben als
         \[
-            H(\psi) = -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_ß\cdot\exp(\cmath\cdot\sckr{k}{r})\cdot e_r\cdot d\exp(-\cmath\cdot\omega\cdot t) + \dots,
+            H(\psi) = -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_0\cdot\exp(\cmath\cdot\sckr{k}{r})\cdot e_r\cdot d\exp(-\cmath\cdot\omega\cdot t) + \dots,
         \] 
         sodaß der Term $\exp(-\cmath\cdot\omega\cdot t)$ eine \emph{zeitliche Störung} darstellt. 
         \begin{Aufgabe}
@@ -55,7 +55,7 @@
 
             \nr{} Ist die periodische Störung schon in $\Gamma_{a\to b}$ enthalten?
         \end{Aufgabe}
-        \noindent Wir stellen eine Proportionalität zwischen $\Gamma_{n\to m}$ und dem Skalarprodukt $\abs{\braopket{\psi_{m,0}}{H_1}{\psi_{n,0}}}$ fest. Wir können zunächst ausformulieren 
+        \noindent Wir stellen eine Proportionalität zwischen $\Gamma_{n\to m}$ und dem Skalarprodukt $\abs{\braopket{\psi_{m,0}}{H_1}{\psi_{n,0}}}$ fest. Es lässt sich zunächst ausformulisieren
         \[
             -\braopket{\psi_{n,0}}{H_1}{\psi_{n,0}} = -\frac{\cmath\cdot\hbar\cdot e}{m_e}\cdot a_0\cdot\scpr{\psi_{n,0}}{\exp(\cmath\cdot\scpr{k}{r})\cdot e_r\cdot d\psi_{n,0}},
         \]
@@ -97,5 +97,51 @@
 
             \nr{} Überlege dir, wo hier Indizes vertauscht sein könnten. 
         \end{Aufgabe}
+
+    \subsection{Auswahlregeln für Wasserstoff}
+        Die Lösungen des Wasserstoffatoms lassen sich geschickterweise durch die Kugelflächenfunktionen $(l,m)\mapsto Y_{l,m}:(\Theta,\varphi)\mapsto\R$ für Winkel $(\Theta,\varphi)\in[0,\pi]\times[0,2\pi]$ und zugehörige Radiusfunktionen $(n,l)\mapsto R_{n,l}:\R\to\R$ darstellen. Für eine Eigenfunktion $\psi_{n,l,m}$ des Wasserstoffatoms $H(\psi) = E\cdot\psi$ findet sich dann der Ausdruck
+        \[
+            \psi_{n,l,m} = R_{n,l}\cdot Y_{l,m}.
+        \]
+        Ihre eindeutige Charakterisierung findet über die drei Quantenzahlen $(n,l,m)\in\N\times [n-1]\times D_{m,l}$ mit $D_{m,l}:=\{-l + n:n\in\N_0\}\cap[-l,l]$ statt. Nun wollen wir die Übergänge durch Auswahlregeln klassifizieren.
+
+        Durch Integration über das Argument $(r,\Theta,\varphi)\in\R_{>0}\times(0,\pi),(-\pi,\pi)$ können wir für einen Übergang $a:=(n_a,l_a,m_{l,a})\to (n_b,l_b,m_{l,b})=:b$ als Slalarprodukt unter Verwendung der Seperationsmöglichkeit für entsprechende Zustände $\psi_a,\psi_b$ schreiben
+        \begin{align*}
+            M_{n\to m} := \braopket{\psi_a}{H}{\psi_b} &= \int_{\R_{>0}}R_a\cdot R_b\abs{\det(Jf)} \cdot \int_{(0,\pi)}\tilde P_a\cdot\tilde P_b\cdot \abs{\det(Jf)} \\
+            &\qquad\cdot \int_{(-\pi,\pi)}\exp(-\cmath\cdot(m_a - m_b))\cdot\abs{\det(Jf)}.
+        \end{align*}
+        Hierbei ist zunächst besonders das letzte Integral interessant, denn es verschwindet überhaupt der gesamte Ausdruck nicht, wenn das letzte Integral nicht verschwindet und $m_a = m_b$ gilt. Es gibt hier noch eine zweite Möglichkeit, auf welche wir später zu sprechen kommen; hier folgern wir zuerst noch die erste \emph{Auswahlregel} für Wasserstoff:
+        \begin{center}
+            $\Delta m = m_b - m_a = 0 \implies $linear polarisiertes Licht. 
+        \end{center}
+        \begin{Aufgabe}
+            \nr{} Berechne das Matrixelement $M_{n\to m}$. Nutze hierzu die Aufspaltung $Y_{l,m} = \tilde P_{l,m}(\cos(\Theta))\cdot\exp(\cmath\cdot m\cdot\varphi)$ - die \emph{normierten Legendre Polynome}. Zerlege dann das Skalarprodukt in die entsprechenden Integrale und zeige die Nullhypothese. 
+        \end{Aufgabe}
+        Um den Zusammenhang für \emph{zirkulär polarisiertes Licht} deutlicher hervorzuheben, wollen wir auf die genauen Integralfaktoren optisch verzichten und uns die Proportionalitäten genauer ansehen. Wir finden durch die Definition der zirkulär polarisierten Welle durch zwei linearkombinierte lineare Wellen mit Phasenverschiebung $\pi/2$ zunächst die Form 
+
+        \[
+            M_{a\to b}^\pm \propto \int_{(-\pi,\pi)}\exp(\cmath\cdot(m_a - m_b)\cdot\varphi)\cdot \ubra{(\cos(\varphi)\pm\cmath\cdot\sin(\varphi))}{\exp(\pm\cmath\cdot\varphi)}\;d\varphi.
+        \]
+        Daraus können wir durch das Integral $\int \exp(\cmath\cdot (m_a - m_b \pm 1)\cdot x)\;dx$ die Folgerung der zweiten und dritten Auswahlregel vollziehen:
+        \begin{center}
+            $\Delta m = \pm 1 \implies$ zirkulär polarisiertes Licht.
+        \end{center}
+        Aus physikalischer Sicht bezwecken die Auswahlregeln die Einhaltung der \emph{Drehimpulserhaltung} und der \emph{Paritätserhaltung}. Im Falle der zirkulären Polarisation entlang der $e_3$ Achse muss sich bei einem abgesonderten Photonendrehimpuls $\pm\hbar$, also $\sigma^\pm$ Licht, der Atomdrehimpuls um die Negation $\mp\hbar$ ändern. Für linearpolarisiertes Licht können wir aus diesem Konzept die Änderung des Atomdrehimpulses um $0$ begründen, da die Überlagerung von $\sigma^+$ mit $\sigma^-$ die linear polarisierte Welle $\pi$ ergibt. 
+
+        Bei unserer Überlegung über das Verschwinden des Matrixelementes $M_{n\to m}$ sprachen wir bereits eine zweite Möglichkeit an: Der Raumwinkel $\Theta$. Wir überlegen uns ein Szenario: Für ein Integral der Form $\int_\R f$ gilt die Gleichheit zu $0$, wenn $f$ zum Beispiel die Bedingung der \emph{Ungeradheit} erfüllt. Liegt diese Charakteristik vor, so können wir das Integral sauber aufspalten zu $\int_{\R_{<0}}f + \int_{\R_{\geq 0}}f$ und erhalten durch das Auslöschen der Terme das Ergebnis $0$. Das spezifische Verhalten der Funktion $f$ bei Spiegelung des Arguments $x$ zu $-x$ bezeichnen wir als \emph{Parität}. Sie ist in positiv und negativ unterteilt mit den Definitionen 
+        \[
+            f(x) = +f(-x)\qquad f(x) = -f(-x).
+        \]
+        Da wir das Verschwinden des Integrales oben gerade nicht erzielen wollen, fordern wir für den Integranden seine \emph{Geradheit}. Wir können dies verschärfen auf die Zustände $\psi_a,\psi_b$: Wir fordern von ihren Darstellungen in $\tilde P_a$ und $\tilde P_b$ \emph{unterschiedliche Parität}. Damit erhalten wir mit der Darstellung $\tilde P_{l,m}(\pi - \Theta,\varphi + \pi) = (-1)^l\cdot\tilde P_{l,m}(\Theta,\varphi)$ die Forderung \emph{bei einem Übergang muss $l$ ungerade werden} die vierte, $l$ betreffende Auswahlregel:
+        \begin{center}
+            $\Delta l = \pm 1$, denn der Drehimpuls des Photons ist $\pm\hbar$.
+        \end{center}
+        Zuletzt halten wir noch fest, daß es für die Hauptquantenzahl $n$ keine solchen Auswahlregeln gibt. Für die Spinquantenzahl $s$ werden wir noch $\Delta s = 0$ feststellen, für $j$ finden wir noch $\Delta j \in\{-1,0,1\}$, wobei der direkte Übergang $j = 0\to 0 = j$ \emp{verboten} ist.
+        \begin{Aufgabe}
+            \nr{} \emph{Weil bei $\Delta s = 0$ die Änderung von $\Delta l = \pm 1$ durch $\Delta m_s \mp 1$ kompensiert werden kann.} Ordne diese Aussage im Kontext der letzten Auswahlregeln ein. 
+
+            \nr{} Bestimme alle Möglichkeiten, wie der Matrixterm $M_{a\to b}$ verschwinden kann, indem du seine Faktoren untersuchst. 
+        \end{Aufgabe}
+
 
 \end{document}

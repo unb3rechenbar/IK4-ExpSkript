@@ -2,4 +2,35 @@
 
 \begin{document}
     
+        \subsection{Wasserstoffatom im Magnetfeld und normaler Zeeman Effekt}
+        \marginnote{\textbf{\textit{VL 13}}\\02.06.2023, 11:45\\@home}
+            \subsubsection*{Semiklassische Beschreibung}
+                Wir stellen uns im semiklassischen Modell das Elektron als klassisch bewegend mit quantisiertem Drehimpuls auf einer Kreisbahn um den Kern mit Radiusvektor $r\in\R^3$ und $\dabs{l}{} = \sqrt{l\cdot (l+1)}\cdot\hbar$ vor. Für die Umlaufzeit gilt dann $T = 2\cdot\pi/\omega$ und für den Strom $I = -e/T$. Daraus bestimmt sich das magnetische Moment als
+                \[
+                    p_m = -I \cdot A_{0,r} = -I\cdot \pi\cdot \dabs{r}{2}^2\cdot n_{A(0,r)},
+                \]
+                wobei $A_{0,r}$ die Fläche der Kreisbahn und $n_{A(0,r)}$ die Normale der Fläche ist. Mit dem Bahndrehimpuls $l = r\times p = m_e\cdot v\cdot \dabs{r}{2}\cdot n_{A(0,r)}$ durch $r\perp p\perp n_{A(0,r)}$ folgt kombiniert
+                \[
+                    p_m \propto -\frac{e}{2\cdot m_e}\cdot l \parallel \mu_l.
+                \]
+                \begin{Aufgabe}
+                    \nr{} Berechne die Proportionalitätskonstante.
+                \end{Aufgabe}
+                Legt man im nächsten Schritt ein $B$ Feld nichtparallel zum magnetischen Moment des Elektrons $\mu_l$ an, so beginnt der Drehimpuls $l$ um die Richtung des $B$ Feldes zu präzedieren. Orientieren wir unser Koordinatensystem in der Art, daß $B \parallel e_z$, so wird der Drehimpuls um $e_z$ erhalten und der Drehimplusoperator $L_z := L_3$ interessant. Wir können zeigen, daß die Eigenwerte von $L_3$ die Form $m\cdot\hbar$ annehmen, wobei $m\in D_l$ die \emph{magnetische Quantenzahl} ist. Die Präzessionsfrequenz ist dann gegeben durch die \emph{Larmor Frequenz} 
+                \[
+                    \omega_p = \frac{D}{\sin(\Theta)\cdot\dabs{l}{2}} = \frac{\dabs{\mu_b}{2}\cdot\dabs{B}{2}\cdot\sin(\Theta)}{\dabs{l}{2}\cdot \sin(\Theta)} = \frac{e}{2\cdot m_e}\cdot\dabs{B}{2}.
+                \]
+                Die Energie des Elektrons als Anschauungsdipol im Magnetfeld ist über die Skalarproduktverknüpfung von $\mu_l$ und $B$ gegeben durch
+                \[
+                    E = -\scpr{\mu_l}{B} = -\frac{e}{2\cdot m_e}\cdot\scpr{l}{B}.
+                \]
+                Fassen wir nun $B = (0,0,B)$ als Vektor und $n\mapsto L_n\in L_S(\mcH)$ als Operatortupel auf, so wird die Energie über die Eigenwerte von $L_3$ weiter bestimmt durch den Einschub der $L_S(\mcH)$ Identität
+                \[
+                    E = -\frac{e}{2\cdot m_e}\cdot B\cdot\id_\mcH\circ L_3 = -\frac{e}{2\cdot m_e}\cdot B\cdot m\cdot\hbar\cdot\id_\mcH = \frac{e\cdot\hbar}{2\cdot m_e}\cdot m\cdot B\cdot\id_\mcH. 
+                \]
+                Den Bruch $\mu_B := e\cdot\hbar/(2\cdot m_e)$ bezeichnet man als das \emph{Bohrsche Magneton}. 
+                \begin{Aufgabe}
+                    \nr{} An dieser Stelle vergisst man in der Physik häufig wieder den Raum, aus welchem $E$ entspringt. Wie ist unter Beachtung dessen die Anschauung des Ergebnisses?
+                \end{Aufgabe}
+
 \end{document}
